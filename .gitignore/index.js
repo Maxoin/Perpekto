@@ -17,10 +17,60 @@ var NumberOwO = 0
 var yuser = ""
 var gifs = {
     a: {
-      nom: "",
-      gif: "",
-      annonce: "",
-      effet: ""
+      nom: "Starlight Unicorn MoonDance",
+      gif: "https://j.gifs.com/oY7Q3B.gif",
+      annonce: "Subit la puissance de Starlight Unicorn !",
+      type: "Lumière"
+    },
+    b: {
+      nom: "Bulle d'eau",
+      gif: "https://data.whicdn.com/images/53032229/original.gif",
+      annonce: "BLBLBLBLBLBLLBLBLBLBLBLBLBLBLLBBLLBBLLBLB",
+      type: "Eau"
+    },
+    c: {
+      nom: "Demon Blast",
+      gif: "https://lh3.googleusercontent.com/-dYRaIl6vww0/Vy6GmxzKYrI/AAAAAAAAADo/WUG33ZYZCXkyENqy2XI_w2Dg90d0joNsw/w500-h259/47fe28ea49779279fdde824d6cba111a63752846_hq.gif",
+      annonce: "Que les Ténèbres s'abattent sur ceux qui crachent vers les cieux !",
+      type: "Ténèbre"
+    },
+    d: {
+      nom: "Heal",
+      gif: "https://j.gifs.com/oY7Q3B.gif",
+      annonce: "http://vignette4.wikia.nocookie.net/fairytailfanon/images/d/d1/Wendy_Marvell_Magical_Power.gif/revision/latest?cb=20150807070001",
+      type: "Neutre"
+    },
+    e: {
+      nom: "Demonic Shield",
+      gif: "http://img2.wikia.nocookie.net/__cb20140806052317/powerlisting/images/6/64/Dark_Shield.gif",
+      annonce: "Le voile des Ténèbres et de la morts est de mon coté !",
+      type: "Ténèbre"
+    },
+    f: {
+      nom: "Surchauffe",
+      gif: "https://j.gifs.com/oY7Q3B.gif",
+      annonce: "Subit la puissance de Starlight Unicorn !",
+      type: "Feu"
+    },
+    g: {
+      nom: "Téléportation",
+      gif: "https://66.media.tumblr.com/e562d21b6f785a012eea8b2ce44bd37c/tumblr_ns3tpxzq391upx3fco1_500.gif",
+      annonce: "Bawoup",
+      type: "Lumière"
+    },
+
+    h: {
+      nom: "Lame Pourpre",
+      gif: "https://em.wattpad.com/fc6144d7941b80707b110c84df410298512eefce/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6e6c75446873565064544c5157673d3d2d3436313439313130322e313464656162643062363731623561393334323335323632383333342e676966?s=fit&w=720&h=720",
+      annonce: "Invocation : Lame Pourpre !",
+      type: "Ténèbre"
+    },
+
+    i: {
+      nom: "Griffe Ombres",
+      gif: "https://em.wattpad.com/fd1d0b850c241d4cdb363eecba4ed041d123e698/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f725a684b476268575152455859513d3d2d3638343635303538362e313537626365353835393631393432653834333337323631383635352e676966?s=fit&w=720&h=720",
+      annonce: "Fufufufufufu~",
+      type: "Ténèbre"
     }
 }
 
