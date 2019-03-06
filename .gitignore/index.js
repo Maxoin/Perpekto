@@ -7,7 +7,6 @@ const FileSync = require('lowdb/adapters/FileSync')
 const adapter = new FileSync('pkmn.json')
 const db = low(adapter)
 
-var guild = "498122570822844417"
 var catnum = ""
 var salon = ""
 var kispawn = 0
@@ -18,166 +17,16 @@ var NumberOwO = 0
 var yuser = ""
 var gifs = {
     a: {
-      nom: "à Reset",
-      gif: "https://media.tenor.com/images/afdf9f5a7139daadbab681b46e9060f1/tenor.gif",
-      annonce: "KUUWA ?! SALO ! TUVAMOURIR !!",
-      effet: ""
-    },
-    b: {
-      nom: "POM",
-      gif: "https://i.pinimg.com/originals/b2/98/3a/b2983aa96a2c2078efd700f363c2a41c.gif",
-      annonce: "Une pomme ?! OU ÇA ??!",
-      effet: ""
-    },
-    c: {
-      nom: "Kawaiiance",
-      gif: "https://thumbs.gfycat.com/WellinformedDirectBorderterrier-size_restricted.gif",
-      annonce: "On m'a appelé ? Jariv.",
-      effet: ""
-    },
-    d: {
-      nom: "Hachwar",
-      gif: "https://i.makeagif.com/media/3-07-2016/kDRsOC.gif",
-      annonce: "...",
-      effet: ""
-    },
-    e: {
-      nom: "Gaster Bluester",
-      gif: "https://media1.tenor.com/images/d4e922f6079875c6627f95311c3b4cfc/tenor.gif?itemid=5879725",
-      annonce: "FUYONS, BLUESTER !",
-      effet: ""
-    },
-    f: {
-      nom: "Dab",
-      gif: "https://img.fireden.net/v/image/1540/37/1540371782616.gif",
-      annonce: "Attaque de type poison !",
-      effet: ""
-    },
-    g: {
-      nom: "FONCEAITÊTEBAISSAIE",
-      gif: "http://media.tumblr.com/359458eec13d42e28d005c7446bbfe40/tumblr_inline_nclb9rRuHl1sm1eq0.gif  ",
-      annonce: "LEROOOOOOOOOOOOOOOOOOOOOOOOOOOOY...",
-      effet: ""
-    },
-    h: {
-      nom: "Viol D'âme",
-      gif: "https://thumbs.gfycat.com/ForsakenComplexAmurratsnake-size_restricted.gif",
-      annonce: "***9666966696669666966696666669***",
-      effet: ""
-    },
-    i: {
-      nom: "Lance-Patate",
-      gif: "https://localtvwqad.files.wordpress.com/2014/10/rocket-explosion.gif?w=400&h=225&crop=1",
-      annonce: "Poussez vous. Voila le Lance-Patate.",
-      effet: ""
-    },
-    j: {
-      nom: "Bulle d'Eau",
-      gif: "https://data.whicdn.com/images/53032229/original.gif",
-      annonce: "BLBLBLBLBLBLLBLBLBLBLBLBLBLBLLBBLLBBLLBLB",
-      effet: ""
-    },
-    k: {
-      nom: "Nonoeil d'Urgence",
-      gif: "https://steamuserimages-a.akamaihd.net/ugc/394421071039533013/751406B81ABF25095895D17E4E781F7E1F011599/",
-      annonce: "Je vais porté ton message ! J'y vole !",
-      effet: ""
-    },
-    l: {
-      nom: "Coup d'Corn",
-      gif: "https://media1.tenor.com/images/f74ea1b96c0291c15c0939364e79bc76/tenor.gif?itemid=12592212",
-      annonce: "Ça tombe bien, j'en ai pleins !",
-      effet: ""
-    },
-    m: {
-      nom: "Machouille",
-      gif: "http://img3.wikia.nocookie.net/__cb20140826061016/freddy-fazbears-pizza/images/3/31/Bonnie_blarg.gif",
-      annonce: "ANYAMNYAMNYAMNYAMNYAMNYAMNYAMNYAM",
-      effet: ""
-    },
-    n: {
-      nom: "Steam Sales",
-      gif: "https://i.imgur.com/VsKmvT9.gif",
-      annonce: "Tu as tout dépensé avant, patate !",
-      effet: ""
-    },
-    o: {
-      nom: "Regard Cute",
-      gif: "https://2.bp.blogspot.com/-G_hxgx8N1J4/WKmuDdtP42I/AAAAAAAGByg/XBAjW6J139EbLAZACLwsOeix5qnJRquNgCLcB/s1600/AW379865_12.gif",
-      annonce: "Ze veux que l'on me pat.",
-      effet: ""
-    },
-    p: {
-      nom: "pat",
-      gif: "https://66.media.tumblr.com/b6492da3e16252d0d6be9a14b40f528a/tumblr_n6s3kx6dxT1tddjuxo1_500.gif",
-      annonce: "Nyaa~",
-      effet: ""
-    },
-    q: {
-      nom: "snob",
-      gif: "https://orig00.deviantart.net/3059/f/2015/140/3/e/close_of_up_by_fawfuls_minion-d8u1ntf.gif",
-      annonce: "Fufufufufu~",
-      effet: ""
-    },
-    r: {
-      nom: "Sasukoeil",
-      gif: "https://media2.giphy.com/media/mzYQ4fp5jn9SM/source.gif",
-      annonce: "あなたはまだそれを知りませんが、あなたはすでに死んでいます。",
-      effet: ""
-    },
-    s: {
-      nom: "nom",
-      gif: "https://media.giphy.com/media/39YrN5qQvUtfW/giphy.gif",
-      annonce: "GATOOOOOOOONomnomnomnomnomnomnom",
-      effet: ""
-    },
-    t: {
-      nom: "shrug",
-      gif: "https://gifimage.net/wp-content/uploads/2018/11/puro-changed-gif-1.gif",
-      annonce: "Hé bah ze sais pas.",
-      effet: ""
-    },
-    u: {
-      nom: "Niklavi",
-      gif: "https://lh3.googleusercontent.com/-TC6LitvVzMc/WPKH_Ro4nqI/AAAAAAAAB4I/jEnC7uoJF6EnyFz6PQyOhtgmaoPG7lWoQCJoC/w290-h300-n-rw/tumblr_inline_nuls3cVXSa1si73t5_500.gif",
-      annonce: "NIKAIVOU",
-      effet: ""
-    },
-    v: {
-      nom: "Starlight Unicorn MoonDance",
-      gif: "https://j.gifs.com/oY7Q3B.gif",
-      annonce: "Subit la puissance de Starlight Unicorn !",
-      effet: ""
-    },
-    w: {
-      nom: "Mochetée",
-      gif: "https://66.media.tumblr.com/bd3c64511033f1a1ffa9ff47d95eb4dc/tumblr_nsu1h0Z2fl1uuck0ko8_400.gif",
-      annonce: "Je ne suis pas moche ! Je suis un Scientifique fou ! Nyahahahahaidhqusofgbdhsqijvgsdkhfnis...",
-      effet: ""
-    },
-    x: {
-      nom: "Lance-Flamme",
-      gif: "https://media1.tenor.com/images/a92907da589b73ac05677929a980b77e/tenor.gif?itemid=5634757",
-      annonce: "LE FEUUUUUUUUUUUUW",
-      effet: ""
-    },
-    y: {
-      nom: "/tp",
-      gif: "https://66.media.tumblr.com/e562d21b6f785a012eea8b2ce44bd37c/tumblr_ns3tpxzq391upx3fco1_500.gif",
-      annonce: "Bawoup",
-      effet: ""
-    },
-    z: {
-      nom: "wantmiam",
-      gif: "http://pa1.narvii.com/6608/b97b677870ef9a17a55ad974892b4efb08699116_00.gif",
-      annonce: "Z'ai faim, ze peux avwar à manzer, ssiteuplait ?",
+      nom: "",
+      gif: "",
+      annonce: "",
       effet: ""
     }
 }
 
 //Declaration Variables~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-var channelStockId = "552143842309046272";  //Max, met ici l'id du channel !
+var channelStockId = "";  //Max, met ici l'id du channel !
 
 var dataBank = []; //Contient des tableaux : C'est la base de données quand le bot est actif !
 
@@ -317,7 +166,7 @@ bot.on('message', message => { //Appartion MOwOnster
    if (findUser(message.author.id) === -1){
     
    }else{
-     var spawn = Math.floor(Math.random() * Math.floor(100))
+     var spawn = ""
      console.log("wala")
      if(spawn <= 10){
        var kispawn =  Math.floor(Math.random() * Math.floor(26))
@@ -335,6 +184,12 @@ bot.on('message', message => { //Appartion MOwOnster
      }
    }
 }})
+
+bot.on('message', message => { //Appartion MOwOnster
+ if(message.content === "<@" + 552793394049712139 + "> je te code et c'est bon, ensuite, ok ?" && message.author.id === "258571960987025408"){
+    message.channel.send("OKEI CA MARSHE, FRRRRRRRRRRRRRRRRRR")
+ }
+})
 
 bot.on('message', message => { //Capture
  if(message.content === "!!cat"){
