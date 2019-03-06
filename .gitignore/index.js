@@ -65,12 +65,113 @@ var gifs = {
       annonce: "Invocation : Lame Pourpre !",
       type: "Ténèbre"
     },
-
     i: {
       nom: "Griffe Ombres",
       gif: "https://em.wattpad.com/fd1d0b850c241d4cdb363eecba4ed041d123e698/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f725a684b476268575152455859513d3d2d3638343635303538362e313537626365353835393631393432653834333337323631383635352e676966?s=fit&w=720&h=720",
       annonce: "Fufufufufufu~",
       type: "Ténèbre"
+    },
+    j: { 
+      nom: "Card Shot",
+      gif: "https://steamuserimages-a.akamaihd.net/ugc/831329494968935938/71C941570ECA9EF3B3F93C4F5DDFE0EAA042D673/",
+      annonce: "100% Topdeck",
+      type: "Lumière"
+    },
+    k: { 
+      nom: "Band Throw",
+      gif: "https://vignette.wikia.nocookie.net/fairy-tail/images/8/8e/Bandages_de_Momie.gif/revision/latest?cb=20130729172858&path-prefix=fr",
+      annonce: "Immobilisation !",
+      type: "Lumière"
+    },
+    l: { 
+      nom: "Tempête Noir",
+      gif: "https://media1.tenor.com/images/1a6ccc93427b6a66cfe38fa09c2ceff9/tenor.gif?itemid=9235472",
+      annonce: "Ominous Wind !",
+      type: "Ténèbres"
+    },
+    m: { 
+      nom: "Boost Wakfu",
+      gif: "https://66.media.tumblr.com/f9fe3fa9bd76681b9dd1663afdc32cca/tumblr_ne6kerep4s1rilod0o1_500.gif",
+      annonce: "Sent le Wakfu t'envahir !",
+      type: "Lumière"
+    },
+    n: {
+      nom: "SmokeBomb",
+      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
+      annonce: "Voila le Brouillard de Guerre !",
+      type: "Feu"
+    },
+    o: {
+      nom: "SpiderCall",
+      gif: "http://pa1.narvii.com/6372/7a144ef302f1c842da28490b18c5ab9d92e6f190_00.gif",
+      annonce: "Les renforts arrivent !",
+      type: "Ténèbres"
+    },
+    p: {
+      nom: "SmokeBomb",
+      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
+      annonce: "Voila le Brouillard de Guerre !",
+      type: "Feu"
+    },
+    q: {
+      nom: "Balrog",
+      gif: "https://thumbs.gfycat.com/ReflectingEagerBelugawhale-size_restricted.gif",
+      annonce: "Toi qui voulais du renfort, te voila servis !",
+      type: "Feu"
+    },
+    r: {
+      nom: "Rosario",
+      gif: "https://img3.wikia.nocookie.net/__cb20130722143011/swordartonline/images/f/fc/Vertical_Square.gif",
+      annonce: "Meurt par le fer !",
+      type: "Vent"
+    },
+    s: {
+      nom: "SmokeBomb",
+      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
+      annonce: "Voila le Brouillard de Guerre !",
+      type: "Feu"
+    },
+    t: {
+      nom: "SmokeBomb",
+      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
+      annonce: "Voila le Brouillard de Guerre !",
+      type: "Feu"
+    },
+    u: {
+      nom: "SmokeBomb",
+      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
+      annonce: "Voila le Brouillard de Guerre !",
+      type: "Feu"
+    },
+    v: {
+      nom: "SmokeBomb",
+      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
+      annonce: "Voila le Brouillard de Guerre !",
+      type: "Feu"
+    },
+    w: {
+      nom: "SmokeBomb",
+      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
+      annonce: "Voila le Brouillard de Guerre !",
+      type: "Feu"
+    },
+    x: {
+      nom: "SmokeBomb",
+      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
+      annonce: "Voila le Brouillard de Guerre !",
+      type: "Feu"
+    },
+    y: {
+      nom: "SmokeBomb",
+      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
+      annonce: "Voila le Brouillard de Guerre !",
+      type: "Feu"
+    },
+    z: {
+      nom: "SmokeBomb",
+      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
+      annonce: "Voila le Brouillard de Guerre !",
+      type: "Feu"
     }
 }
 
