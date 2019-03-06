@@ -26,7 +26,7 @@ var gifs = {
 
 //Declaration Variables~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-var channelStockId = "";  //Max, met ici l'id du channel !
+var channelStockId = "552801442088484884";  //Max, met ici l'id du channel !
 
 var dataBank = []; //Contient des tableaux : C'est la base de données quand le bot est actif !
 
@@ -184,12 +184,6 @@ bot.on('message', message => { //Appartion MOwOnster
      }
    }
 }})
-
-bot.on('message', message => { //Appartion MOwOnster
- if(message.content === "<@" + 552793394049712139 + "> je te code et c'est bon, ensuite, ok ?" && message.author.id === "258571960987025408"){
-    message.channel.send("OKEI CA MARSHE, FRRRRRRRRRRRRRRRRRR")
- }
-})
 
 bot.on('message', message => { //Capture
  if(message.content === "!!cat"){
