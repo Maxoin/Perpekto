@@ -20,13 +20,13 @@
     },
     "3": {
       "idey": 3,
-      "nom": "Sans",
-      "image": "https://orig10.deviantart.net/a9e1/f/2016/059/1/1/sans___speedpaint__by_haneie-d9td8eh.png",
+      "nom": "Ben Drowned",
+      "image": "https://i.pinimg.com/originals/89/54/6f/89546f402cca3c85bf74a080407a684e.jpg",
       "gifattrib": "d"
     },
     "4": {
       "idey": 4,
-      "nom": "Ben Drowned",
+      "nom": "Leveinar",
       "image": "https://i.pinimg.com/originals/89/54/6f/89546f402cca3c85bf74a080407a684e.jpg",
       "gifattrib": "e"
     },
@@ -42,29 +42,23 @@
       "image": "http://image.noelshack.com/fichiers/2014/10/1393976452-p-104-a.jpg",
       "gifattrib": "g"
     },
-    "25": {
-      "idey": 25,
-      "nom": "Nanachi",
-      "image": "https://myanimelist.cdn-dena.com/images/characters/7/303689.jpg",
-      "gifattrib": "z"
+    "7": {
+      "idey": 7,
+      "nom": "Zer0",
+      "image": "https://i.pinimg.com/736x/48/45/86/48458694f7b4e71e8ea9d231dce125ff--zero-kid-outfits.jpg",
+      "gifattrib": "h"
     },
-    "26": {
-      "idey": 26,
-      "nom": "Mega-Nanachi",
-      "image": "https://i.pinimg.com/736x/b3/5f/43/b35f438fbc5fe3ee1ed539bbaf58ec92.jpg",
-      "gifattrib": ""
-    },
-    "27": {
-      "idey": 27,
+    "8": {
+      "idey": 8,
       "nom": "KingBit",
       "image": "https://i.pinimg.com/736x/3f/b9/22/3fb922c9b5207e98a887bded0b72a543--monster-design-monster-art.jpg?b=t",
-      "gifattrib": ""
+      "gifattrib": "i"
     },
-    "28": {
-      "idey": 28,
+    "9": {
+      "idey": 9,
       "nom": "Checkmate",
       "image": "https://i.pinimg.com/736x/3a/32/9f/3a329fd51b329f5e6328f4ef8a42b336.jpg?b=t",
-      "gifattrib": ""
+      "gifattrib": "j"
     },
     "29": {
       "idey": 29,
@@ -529,8 +523,8 @@
     },
     "106": {
       "idey": 106,
-      "nom": "Carré",
-      "image": "https://cdn.discordapp.com/attachments/498122570822844419/551019364049223690/unknown.png",
+      "nom": "",
+      "image": "",
       "gifattrib": ""
     },
     "107": {
