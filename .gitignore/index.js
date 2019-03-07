@@ -304,7 +304,7 @@ bot.on('message', message => { // !!OwOLog ! faisable plusieurs fois !
 });
 
 bot.on('message', message => { //Log
-    if (message.content === "!!Log") {
+    if (message.content === "owoLog") {
         read()
         console.log("Wesh les relous, ce soir on fout le zbeul")
     }
@@ -319,7 +319,7 @@ bot.on('message', message => { //Appartion MOwOnster
    }else{
      var spawn = ""
      console.log("wala")
-     if(spawn <= 10){
+     if(spawn <= 8){
        var kispawn =  Math.floor(Math.random() * Math.floor(20))
        console.log(kispawn)
          ideydb = db.get('mowo').filter({idey: kispawn}).find('idey').value()
@@ -329,7 +329,7 @@ bot.on('message', message => { //Appartion MOwOnster
          .addField(`C'est un ${ideye[1]} !`, 'Attrape le avec un "!!cat" !')
          .setImage(ideye[2])
          .setColor("#351cc0")
-         bot.channels.get("551531569060511774").send(embedp)
+         bot.channels.get("551556079067070474").send(embedp)
          catnum = kispawn
          salon = message.channel.id
      }
