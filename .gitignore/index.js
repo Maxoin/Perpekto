@@ -317,7 +317,7 @@ bot.on('message', message => { //Appartion MOwOnster
    if (findUser(message.author.id) === -1){
     
    }else{
-     var spawn = Math.floor(Math.random() * Math.floor(100)
+     var spawn = Math.floor(Math.random() * Math.floor(100))
      console.log("wala")
      if(spawn <= 8){
        var kispawn =  Math.floor(Math.random() * Math.floor(20))
