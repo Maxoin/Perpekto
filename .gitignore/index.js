@@ -126,9 +126,9 @@ var gifs = {
       type: "Vent"
     },
     s: {
-      nom: "SmokeBomb",
-      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
-      annonce: "Voila le Brouillard de Guerre !",
+      nom: "Mudah",
+      gif: "https://cdn.discordapp.com/attachments/498122570822844419/553145999015804928/2bc.gif",
+      annonce: "ATATATATATATATATATATATATATA",
       type: "Feu"
     },
     t: {
