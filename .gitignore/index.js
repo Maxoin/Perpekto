@@ -108,10 +108,10 @@ var gifs = {
       type: "Lumiére"
     },
     o: {
-      nom: "SmokeBomb",
-      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
-      annonce: "Voila le Brouillard de Guerre !",
-      type: "Feu"
+      nom: "Spider Call",
+      gif: "http://pa1.narvii.com/6372/7a144ef302f1c842da28490b18c5ab9d92e6f190_00.gif",
+      annonce: "Les renforts arrivent !",
+      type: "Vent"
     },
     q: {
       nom: "Balrog",
