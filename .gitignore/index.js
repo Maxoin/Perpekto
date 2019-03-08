@@ -304,14 +304,10 @@ bot.on('message', message => { // !!OwOLog ! faisable plusieurs fois !
 
 });
 
-bot.on('message', message => { //Log
-    if (message.content === "owoLog") {
-        read()
-        console.log("Wesh les relous, ce soir on fout le zbeul")
-    }
-  })
 
 bot.on('message', message => { //Appartion MOwOnster
+    read()
+    console.log("Wesh les relous, ce soir on fout le zbeul")
  if(message.content.includes("!!")){
   
  }else{
