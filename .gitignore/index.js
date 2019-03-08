@@ -48,8 +48,8 @@ var gifs = {
     },
     f: {
       nom: "Surchauffe",
-      gif: "https://j.gifs.com/oY7Q3B.gif",
-      annonce: "Subit la puissance de Starlight Unicorn !",
+      gif: "https://cdn.discordapp.com/attachments/498122570822844419/553477380346216458/tenor_1.gif",
+      annonce: "FEUUUUUUUW !",
       type: "Feu"
     },
     g: {
