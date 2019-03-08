@@ -101,13 +101,13 @@ var gifs = {
       annonce: "Voila le Brouillard de Guerre !",
       type: "Feu"
     },
-    o: {
+    p: {
       nom: "Crystal Dash",
       gif: "https://cdn.discordapp.com/attachments/551844101327421451/553510703424602113/1491658609_1.gif",
       annonce: "Leroy Jenkins Style !",
       type: "Lumiére"
     },
-    p: {
+    o: {
       nom: "SmokeBomb",
       gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
       annonce: "Voila le Brouillard de Guerre !",
