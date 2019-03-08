@@ -102,10 +102,10 @@ var gifs = {
       type: "Feu"
     },
     o: {
-      nom: "SpiderCall",
-      gif: "http://pa1.narvii.com/6372/7a144ef302f1c842da28490b18c5ab9d92e6f190_00.gif",
-      annonce: "Les renforts arrivent !",
-      type: "Ténèbres"
+      nom: "Crystal Dash",
+      gif: "https://cdn.discordapp.com/attachments/551844101327421451/553510703424602113/1491658609_1.gif",
+      annonce: "Leroy Jenkins Style !",
+      type: "Lumiére"
     },
     p: {
       nom: "SmokeBomb",
