@@ -280,7 +280,7 @@ bot.on('message', message => { //help
       .addField("!!OwOLog", "Commande à ne faire qu'une fois, pour se connecter au Bot.\n/!/ La faire plusieurs fois supprimera votre progression. /!/.")
       .addField("!!cat", "Commande pour attraper un MOwOnster lorsqu'il apparait.")
       .addField("!!dispo", "Commande pour voir quels Attaques sont disponibles.")
-      .addField(">[Votre attaque]", "Lance une attaque")
+      .addField("!![Votre attaque]", "Lance une attaque")
       .setColor("#68f17d")
       .setFooter("Amusez vous bien ! - Maxoin | Louloup | Senchi | Baz")
       message.channel.send(embed);
@@ -353,7 +353,7 @@ bot.on('message', message => { //Capture
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "a") && message.content.includes('>' + gifs.a.nom)){
+  if(gotOwO(yuser, "a") && message.content.includes('!!' + gifs.a.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.a.annonce)
       .setImage(gifs.a.gif)
@@ -363,7 +363,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "b") && message.content.includes('>' + gifs.b.nom)){
+  if(gotOwO(yuser, "b") && message.content.includes('!!' + gifs.b.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.b.annonce)
       .setImage(gifs.b.gif)
@@ -373,7 +373,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "c") && message.content.includes('>' + gifs.c.nom)){
+  if(gotOwO(yuser, "c") && message.content.includes('!!' + gifs.c.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.c.annonce)
       .setImage(gifs.c.gif)
@@ -383,7 +383,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "d") && message.content.includes('>' + gifs.d.nom)){
+  if(gotOwO(yuser, "d") && message.content.includes('!!' + gifs.d.nom)){
    console.log("TARACE LA HACHE")
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.d.annonce)
@@ -394,7 +394,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "e") && message.content.includes('>' + gifs.e.nom)){
+  if(gotOwO(yuser, "e") && message.content.includes('!!' + gifs.e.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.e.annonce)
       .setImage(gifs.e.gif)
@@ -404,7 +404,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "f") && message.content.includes('>' + gifs.f.nom)){
+  if(gotOwO(yuser, "f") && message.content.includes('!!' + gifs.f.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.f.annonce)
       .setImage(gifs.f.gif)
@@ -414,7 +414,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "g") && message.content.includes('>' + gifs.g.nom)){
+  if(gotOwO(yuser, "g") && message.content.includes('!!' + gifs.g.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.g.annonce)
       .setImage(gifs.g.gif)
@@ -424,7 +424,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "h") && message.content.includes('>' + gifs.h.nom)){
+  if(gotOwO(yuser, "h") && message.content.includes('!!' + gifs.h.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.h.annonce)
       .setImage(gifs.h.gif)
@@ -434,7 +434,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "i") && message.content.includes('>' + gifs.i.nom)){
+  if(gotOwO(yuser, "i") && message.content.includes('!!' + gifs.i.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.i.annonce)
       .setImage(gifs.i.gif)
@@ -444,7 +444,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "j") && message.content.includes('>' + gifs.j.nom)){
+  if(gotOwO(yuser, "j") && message.content.includes('!!' + gifs.j.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.j.annonce)
       .setImage(gifs.j.gif)
@@ -454,7 +454,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "k") && message.content.includes('>' + gifs.k.nom)){
+  if(gotOwO(yuser, "k") && message.content.includes('!!' + gifs.k.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.k.annonce)
       .setImage(gifs.k.gif)
@@ -464,7 +464,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "l") && message.content.includes('>' + gifs.l.nom)){
+  if(gotOwO(yuser, "l") && message.content.includes('!!' + gifs.l.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.l.annonce)
       .setImage(gifs.l.gif)
@@ -474,7 +474,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "m") && message.content.includes('>' + gifs.m.nom)){
+  if(gotOwO(yuser, "m") && message.content.includes('!!' + gifs.m.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.m.annonce)
       .setImage(gifs.m.gif)
@@ -484,7 +484,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "n") && message.content.includes('>' + gifs.n.nom)){
+  if(gotOwO(yuser, "n") && message.content.includes('!!' + gifs.n.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.n.annonce)
       .setImage(gifs.n.gif)
@@ -494,7 +494,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "o") && message.content.includes('>' + gifs.o.nom)){
+  if(gotOwO(yuser, "o") && message.content.includes('!!' + gifs.o.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.o.annonce)
       .setImage(gifs.o.gif)
@@ -504,7 +504,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "p") && message.content.includes('>' + gifs.p.nom)){
+  if(gotOwO(yuser, "p") && message.content.includes('!!' + gifs.p.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.p.annonce)
       .setImage(gifs.p.gif)
@@ -514,7 +514,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "q") && message.content.includes('>' + gifs.q.nom)){
+  if(gotOwO(yuser, "q") && message.content.includes('!!' + gifs.q.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.q.annonce)
       .setImage(gifs.q.gif)
@@ -524,7 +524,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "r") && message.content.includes('>' + gifs.r.nom)){
+  if(gotOwO(yuser, "r") && message.content.includes('!!' + gifs.r.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.r.annonce)
       .setImage(gifs.r.gif)
@@ -534,7 +534,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "s") && message.content.includes('>' + gifs.s.nom)){
+  if(gotOwO(yuser, "s") && message.content.includes('!!' + gifs.s.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.s.annonce)
       .setImage(gifs.s.gif)
@@ -544,7 +544,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "t") && message.content.includes('>' + gifs.t.nom)){
+  if(gotOwO(yuser, "t") && message.content.includes('!!' + gifs.t.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.t.annonce)
       .setImage(gifs.t.gif)
@@ -554,7 +554,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "u") && message.content.includes('>' + gifs.u.nom)){
+  if(gotOwO(yuser, "u") && message.content.includes('!!' + gifs.u.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.u.annonce)
       .setImage(gifs.u.gif)
@@ -564,7 +564,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "v") && message.content.includes('>' + gifs.v.nom)){
+  if(gotOwO(yuser, "v") && message.content.includes('!!' + gifs.v.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.v.annonce)
       .setImage(gifs.v.gif)
@@ -575,7 +575,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "w") && message.content.includes('>' + gifs.w.nom)){
+  if(gotOwO(yuser, "w") && message.content.includes('!!' + gifs.w.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.w.annonce)
       .setImage(gifs.w.gif)
@@ -586,7 +586,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "x") && message.content.includes('>' + gifs.x.nom)){
+  if(gotOwO(yuser, "x") && message.content.includes('!!' + gifs.x.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.x.annonce)
       .setImage(gifs.x.gif)
@@ -597,7 +597,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "y") && message.content.includes('>' + gifs.y.nom)){
+  if(gotOwO(yuser, "y") && message.content.includes('!!' + gifs.y.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.y.annonce)
       .setImage(gifs.y.gif)
@@ -607,7 +607,7 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "z") && message.content.includes('>' + gifs.y.nom)){
+  if(gotOwO(yuser, "z") && message.content.includes('!!' + gifs.y.nom)){
     var embed = new Discord.RichEmbed()
       .setTitle(gifs.y.annonce)
       .setImage(gifs.y.gif)
