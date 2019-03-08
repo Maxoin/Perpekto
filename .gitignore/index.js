@@ -306,8 +306,6 @@ bot.on('message', message => { // !!OwOLog ! faisable plusieurs fois !
 
 
 bot.on('message', message => { //Appartion MOwOnster
-    read()
-    console.log("Wesh les relous, ce soir on fout le zbeul")
  if(message.content.includes("!!")){
   
  }else{
@@ -316,6 +314,8 @@ bot.on('message', message => { //Appartion MOwOnster
    }else{
      var spawn = Math.floor(Math.random() * Math.floor(100))
      console.log("wala")
+     read()
+     console.log("Wesh les relous, ce soir on fout le zbeul")
      if(spawn <= 8){
        var kispawn =  Math.floor(Math.random() * Math.floor(20))
        console.log(kispawn)
