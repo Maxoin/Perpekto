@@ -279,7 +279,7 @@ bot.on('message', message => { //help
       .addField("!!help", "Affiche les commandes du bot.")
       .addField("!!OwOLog", "Commande à ne faire qu'une fois, pour se connecter au Bot.\n/!/ La faire plusieurs fois supprimera votre progression. /!/.")
       .addField("!!cat", "Commande pour attraper un MOwOnster lorsqu'il apparait.")
-      .addField("!!dispo", "Commande pour voir quels Emotes sont disponibles.")
+      .addField("!!dispo", "Commande pour voir quels Attaques sont disponibles.")
       .addField(">[Votre attaque]", "Lance une attaque")
       .setColor("#68f17d")
       .setFooter("Amusez vous bien ! - Maxoin | Louloup | Senchi | Baz")
