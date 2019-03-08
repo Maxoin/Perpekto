@@ -319,7 +319,7 @@ bot.on('message', message => { //Appartion MOwOnster
      var spawn = Math.floor(Math.random() * Math.floor(100))
      console.log("wala")
      if(spawn <= 8){
-       var kispawn =  Math.floor(Math.random() * Math.floor(20))
+       var kispawn =  Math.floor(Math.random() * Math.floor(22))
        console.log(kispawn)
          ideydb = db.get('mowo').filter({idey: kispawn}).find('idey').value()
          ideye = Object.values(ideydb)
