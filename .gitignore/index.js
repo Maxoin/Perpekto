@@ -132,22 +132,22 @@ var gifs = {
       type: "Feu"
     },
     t: {
-      nom: "SmokeBomb",
-      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
-      annonce: "Voila le Brouillard de Guerre !",
-      type: "Feu"
+      nom: "For+",
+      gif: "https://cdn.discordapp.com/attachments/551844101327421451/553587688221966336/tumblr_nqd1113Er21uo9l9co1_500.gif",
+      annonce: "Que la puissance porte tes coups !",
+      type: "Lumiére"
     },
     u: {
-      nom: "SmokeBomb",
-      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
-      annonce: "Voila le Brouillard de Guerre !",
-      type: "Feu"
+      nom: "Aura Sphere",
+      gif: "https://cdn.discordapp.com/attachments/551844101327421451/553587735231987722/3179789263_1_46_Vs9aJhuY.gif",
+      annonce: "Attention au pouvoir de l'Aura !",
+      type: "Lumiére"
     },
     v: {
-      nom: "SmokeBomb",
-      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
-      annonce: "Voila le Brouillard de Guerre !",
-      type: "Feu"
+      nom: "MultiClonage",
+      gif: "https://cdn.discordapp.com/attachments/551844101327421451/553587603211812864/tumblr_lw5um6mKa11qczibyo1_500.gif",
+      annonce: "Je suis ici ? Ou la ? Ou peut étre ici ?",
+      type: "Vent"
     },
     w: {
       nom: "SmokeBomb",
