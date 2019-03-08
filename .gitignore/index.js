@@ -67,7 +67,7 @@ var gifs = {
     },
     i: {
       nom: "Griffe Ombres",
-      gif: "https://em.wattpad.com/fd1d0b850c241d4cdb363eecba4ed041d123e698/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f725a684b476268575152455859513d3d2d3638343635303538362e313537626365353835393631393432653834333337323631383635352e676966?s=fit&w=720&h=720",
+      gif: "https://cdn.discordapp.com/attachments/551844101327421451/553486721040384000/592.gif",
       annonce: "Fufufufufufu~",
       type: "Ténèbre"
     },
@@ -79,7 +79,7 @@ var gifs = {
     },
     k: { 
       nom: "Band Throw",
-      gif: "https://vignette.wikia.nocookie.net/fairy-tail/images/8/8e/Bandages_de_Momie.gif/revision/latest?cb=20130729172858&path-prefix=fr",
+      gif: "https://cdn.discordapp.com/attachments/551844101327421451/553486740539703296/Bandages_de_Momie.gif",
       annonce: "Immobilisation !",
       type: "Lumière"
     },
@@ -97,7 +97,7 @@ var gifs = {
     },
     n: {
       nom: "SmokeBomb",
-      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
+      gif: "https://cdn.discordapp.com/attachments/551844101327421451/553486687075041290/Smokescreen.gif",
       annonce: "Voila le Brouillard de Guerre !",
       type: "Feu"
     },
