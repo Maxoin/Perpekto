@@ -312,7 +312,23 @@ bot.on('message', message => {
 
 bot.on('message', message => { //Ouverture de la dimension OwO
     if(message.content === "!!fight" && message.channel.id === "532536267368431646"){
-      message.channel.send("Commande en cours de création.")
+        var dimproba = Math.floor(Math.random() * Math.floor(4))
+        if(dimproba === 0){
+        var embeddim = new Discord.RichEmbed()
+           .setTitle("*Le Ring prend la forme de la Forêt Luxuriante*")
+           .setImage("https://d2omnifng3m7y7.cloudfront.net/img/forets/coadou.jpg")
+        bot.channels.send(embedp)
+        }else if(dimproba === 1){
+        var embeddim = new Discord.RichEmbed()
+            .setTitle("*Le Ring prend la forme des Égouts de Blancherive*")
+            .setImage("https://jolstatic.fr/www/captures/1816/2/107772.png")
+        bot.channels.send(embedp)
+        }else if(dimproba === 2){
+        var embeddim = new Discord.RichEmbed()
+            .setTitle("*Le Ring prend la forme du Village Abandonné*")
+            .setImage("https://www.lecurionaute.fr/wp-content/uploads/2016/07/le-village-abandonne-d-occi-en-corse-770x360.jpg")
+        bot.channels.send(embedp)
+        }
     }
 })
 
