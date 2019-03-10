@@ -281,6 +281,7 @@ bot.on('message', message => { //help
       .addField("!!cat", "Commande pour attraper un MOwOnster lorsqu'il apparait.")
       .addField("!!dispo", "Commande pour voir quels Attaques sont disponibles.")
       .addField("!![Votre attaque]", "Lance une attaque")
+      .addField("!!fight", "Transforme <#532536267368431646> en un terrain aléatoire de la dimension OwO (Fonctionnel uniquement dans ce salon).")
       .setColor("#68f17d")
       .setFooter("Amusez vous bien ! - Maxoin | Louloup | Senchi | Baz")
       message.channel.send(embed);
@@ -307,7 +308,13 @@ bot.on('message', message => { // !!OwOLog ! faisable plusieurs fois !
 bot.on('message', message => {
     read()
     console.log("Wesh les relous, ce soir on fout le zbeul")
-    })
+})
+
+bot.on('message', message => { //Ouverture de la dimension OwO
+    if(message.content === "!!fight" && message.channel.id === "532536267368431646"){
+      message.channel.send("Commande en cours de création.")
+    }
+})
 
 bot.on('message', message => { //Appartion MOwOnster
  if(message.content.includes("!!")){
@@ -318,7 +325,7 @@ bot.on('message', message => { //Appartion MOwOnster
    }else{
      var spawn = Math.floor(Math.random() * Math.floor(100))
      console.log("wala")
-     if(spawn <= 8){
+     if(spawn <= 11){
        var kispawn =  Math.floor(Math.random() * Math.floor(22))
        console.log(kispawn)
          ideydb = db.get('mowo').filter({idey: kispawn}).find('idey').value()
