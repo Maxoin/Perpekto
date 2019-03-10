@@ -36,7 +36,7 @@ var gifs = {
     },
     e: {
       nom: "Heal",
-      gif: "http://vignette4.wikia.nocookie.net/fairytailfanon/images/d/d1/Wendy_Marvell_Magical_Power.gif/revision/latest?cb=20150807070001",
+      gif: "https://cdn.discordapp.com/attachments/498122570822844419/554304684358107136/3PqxjpgzJ7bqgJk_GUrPDaQpL8I100x100.gif",
       annonce: "Le Soin du Ouin !",
       type: "Neutre"
     },
