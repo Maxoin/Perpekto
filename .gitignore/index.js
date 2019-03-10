@@ -34,13 +34,13 @@ var gifs = {
       annonce: "Que les Ténèbres s'abattent sur ceux qui crachent vers les cieux !",
       type: "Ténèbre"
     },
-    d: {
+    e: {
       nom: "Heal",
       gif: "http://vignette4.wikia.nocookie.net/fairytailfanon/images/d/d1/Wendy_Marvell_Magical_Power.gif/revision/latest?cb=20150807070001",
       annonce: "Le Soin du Ouin !",
       type: "Neutre"
     },
-    e: {
+    d: {
       nom: "Demonic Shield",
       gif: "http://img2.wikia.nocookie.net/__cb20140806052317/powerlisting/images/6/64/Dark_Shield.gif",
       annonce: "Le voile des Ténèbres et de la morts est de mon coté !",
