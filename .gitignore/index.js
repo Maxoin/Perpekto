@@ -150,29 +150,41 @@ var gifs = {
       type: "Vent"
     },
     w: {
-      nom: "SmokeBomb",
-      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
-      annonce: "Voila le Brouillard de Guerre !",
+      nom: "Lance-Patate",
+      gif: "https://localtvwqad.files.wordpress.com/2014/10/rocket-explosion.gif?w=400&h=225&crop=1",
+      annonce: "Poussez vous. Voila le Lance-Patate.",
       type: "Feu"
     },
     x: {
-      nom: "SmokeBomb",
-      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
-      annonce: "Voila le Brouillard de Guerre !",
+      nom: "Bouboulle",
+      gif: "http://www.db-z.com/wp-content/uploads/2016/01/Golden-Freezer-attack-2.gif",
+      annonce: "Piou piou piou piouuuuuuuuuuuuw !",
       type: "Feu"
     },
     y: {
-      nom: "SmokeBomb",
-      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
-      annonce: "Voila le Brouillard de Guerre !",
+      nom: "Sonic Kick",
+      gif: "hthttps://orig12.deviantart.net/512c/f/2017/232/e/1/metal_dura_by_spidermang10-dbkr9oh.gif",
+      annonce: "Boum ! Dans l'dos !",
       type: "Feu"
     },
     z: {
-      nom: "SmokeBomb",
-      gif: "https://vignette.wikia.nocookie.net/swordartonline/images/8/80/Smokescreen.gif/revision/latest?cb=20140304144205",
-      annonce: "Voila le Brouillard de Guerre !",
-      type: "Feu"
-    }
+      nom: "Encrage",
+      gif: "https://pa1.narvii.com/5870/52afbedce7ed1ce5a82dd57bb9bfb8420526b7bb_hq.gif",
+      annonce: "Jetez l'Encre !",
+      type: "Eau"
+    },
+    aa: {
+      nom: "Dragon Wakup",
+      gif: "https://pa1.narvii.com/6078/f3fa4089e81f54a0df056912e5f9acbdf9f3a944_hq.gif",
+      annonce: "Une invocation lourde, ça en jette !",
+      type: "Vent"
+    },
+    ab: {
+      nom: "Starlight Unicorn MoonDance",
+      gif: "https://j.gifs.com/oY7Q3B.gif",
+      annonce: "Subit la puissance de Starlight Unicorn !",
+      type: "Lumière"
+    }  
 }
 
 //Declaration Variables~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -341,8 +353,8 @@ bot.on('message', message => { //Appartion MOwOnster
    }else{
      var spawn = Math.floor(Math.random() * Math.floor(100))
      console.log("wala")
-     if(spawn <= 11){
-       var kispawn =  Math.floor(Math.random() * Math.floor(22))
+     if(spawn <= 8){
+       var kispawn =  Math.floor(Math.random() * Math.floor(30))
        console.log(kispawn)
          ideydb = db.get('mowo').filter({idey: kispawn}).find('idey').value()
          ideye = Object.values(ideydb)
