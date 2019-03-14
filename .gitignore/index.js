@@ -642,10 +642,50 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "z") && message.content.includes('!!' + gifs.y.nom)){
+  if(gotOwO(yuser, "z") && message.content.includes('!!' + gifs.z.nom)){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.y.annonce)
-      .setImage(gifs.y.gif)
+      .setTitle(gifs.z.annonce)
+      .setImage(gifs.z.gif)
+      .setColor("#ff6900")
+    message.channel.send(embed);
+}})
+
+bot.on('message', message => { //Gifs
+  yuser = message.author.id
+  if(gotOwO(yuser, "aa") && message.content.includes('!!' + gifs.aa.nom)){
+    var embed = new Discord.RichEmbed()
+      .setTitle(gifs.aa.annonce)
+      .setImage(gifs.aa.gif)
+      .setColor("#ff6900")
+    message.channel.send(embed);
+}})
+
+bot.on('message', message => { //Gifs
+  yuser = message.author.id
+  if(gotOwO(yuser, "ab") && message.content.includes('!!' + gifs.ab.nom)){
+    var embed = new Discord.RichEmbed()
+      .setTitle(gifs.ab.annonce)
+      .setImage(gifs.ab.gif)
+      .setColor("#ff6900")
+    message.channel.send(embed);
+}})
+
+bot.on('message', message => { //Gifs
+  yuser = message.author.id
+  if(gotOwO(yuser, "ac") && message.content.includes('!!' + gifs.ac.nom)){
+    var embed = new Discord.RichEmbed()
+      .setTitle(gifs.ac.annonce)
+      .setImage(gifs.ac.gif)
+      .setColor("#ff6900")
+    message.channel.send(embed);
+}})
+
+bot.on('message', message => { //Gifs
+  yuser = message.author.id
+  if(gotOwO(yuser, "ad") && message.content.includes('!!' + gifs.ad.nom)){
+    var embed = new Discord.RichEmbed()
+      .setTitle(gifs.ad.annonce)
+      .setImage(gifs.ad.gif)
       .setColor("#ff6900")
     message.channel.send(embed);
 }})
@@ -729,5 +769,17 @@ bot.on('message', message => { //Dispo Emotes
    }
    if(gotOwO(yuser, "z")){
     message.channel.send(gifs.z.nom)
+   }
+   if(gotOwO(yuser, "aa")){
+    message.channel.send(gifs.aa.nom)
+   }
+   if(gotOwO(yuser, "ab")){
+    message.channel.send(gifs.ab.nom)
+   }
+   if(gotOwO(yuser, "ac")){
+    message.channel.send(gifs.ac.nom)
+   }
+   if(gotOwO(yuser, "ad")){
+    message.channel.send(gifs.ad.nom)
    }
 }})
