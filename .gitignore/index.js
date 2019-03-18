@@ -393,7 +393,7 @@ bot.on('message', message => { //Capture
       console.log("'^'")
     }else{
       add(yuser, dataBankK[catnum][2])
-      message.channel.send(`Bien jouer ! Tu viens de capturer un ${dataBankK[kispawn][1]}, COwOmbatant !`)
+      message.channel.send(`Bien joué, ${message.author.username} ! Tu viens de capturer un ${dataBankK[catnum][1]}, COwOmbatant !`)
       catnum = "" 
     }
   }
