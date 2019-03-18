@@ -369,7 +369,7 @@ bot.on('message', message => { //Appartion MOwOnster
      var spawn = Math.floor(Math.random() * Math.floor(100))
      console.log("wala")
      if(spawn <= 11){
-       var kispawn =  Math.floor(Math.random() * Math.floor(30))
+       var kispawn =  Math.floor(Math.random() * Math.floor(6))
        console.log(kispawn)
        var embedp = new Discord.RichEmbed()
          .setTitle("Un MOwOnster est apparut !")
