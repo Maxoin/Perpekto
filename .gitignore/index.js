@@ -413,6 +413,7 @@ bot.on('message', message => { //Capture
     }
   }
 }})
+/*
 
 bot.on('message', message => {
     if(message.content.includes("!!" + dataBankG[NumberOwO][0])){
@@ -428,12 +429,4 @@ bot.on('message', message => {
         }       
     }
 })
-/*
-  yuser = message.author.id
-  if(gotOwO(yuser, "j") && message.content.includes('!!' + gifs.j.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.j.annonce)
-      .setImage(gifs.j.gif)
-      .setColor("#7caeec")
-    message.channel.send(embed);
-}})*/
+*/
