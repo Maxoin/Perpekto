@@ -392,7 +392,7 @@ bot.on('message', message => { //Capture
     if(catnum === ""){
       console.log("'^'")
     }else{
-      add(yuser, ideye[3])
+      add(yuser, dataBankK[catnum][2])
       message.channel.send(`Bien jouer ! Tu viens de capturer un ${ideye[1]}, COwOmbatant !`)
       catnum = "" 
     }
