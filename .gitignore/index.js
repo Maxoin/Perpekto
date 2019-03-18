@@ -1,12 +1,6 @@
 const Discord = require('discord.js');
 var bot = new Discord.Client();
 
-const low = require('lowdb')
-const FileSync = require('lowdb/adapters/FileSync')
-
-const adapter = new FileSync('pkmn.json')
-const db = low(adapter)
-
 var catnum = ""
 var salon = ""
 var kispawn = 0
@@ -189,9 +183,13 @@ var gifs = {
 
 //Declaration Variables~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-var channelStockId = "552801442088484884";  //Max, met ici l'id du channel !
+var channelStockId = "557114023896678400";  //Max, met ici l'id du channel !
+
+var channelStockIdK = "557113676914491402"; 
 
 var dataBank = []; //Contient des tableaux : C'est la base de données quand le bot est actif !
+
+var dataBankK = [];
 
 //Declaration Fonction~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -203,6 +201,22 @@ function read () { //lit le stockage discord et le met dans le stockage variable
                
                 messages.forEach(function(valeur , clé) {
                     dataBank.push(valeur.content.split(" * "));
+                })
+            )
+            .catch(console.error)
+        )
+        
+    
+};
+
+function readK () { //lit le stockage discord et le met dans le stockage variable
+
+    // met le contenu des messages dans dataBank
+        (bot.channels.get(channelStockIdK).fetchMessages({ limit: 100 }) 
+            .then(messages => 
+               
+                messages.forEach(function(valeur , clé) {
+                    dataBankK.push(valeur.content.split(" * "));
                 })
             )
             .catch(console.error)
@@ -356,12 +370,10 @@ bot.on('message', message => { //Appartion MOwOnster
      if(spawn <= 11){
        var kispawn =  Math.floor(Math.random() * Math.floor(30))
        console.log(kispawn)
-         ideydb = db.get('mowo').filter({idey: kispawn}).find('idey').value()
-         ideye = Object.values(ideydb)
        var embedp = new Discord.RichEmbed()
          .setTitle("Un MOwOnster est apparut !")
-         .addField(`C'est un ${ideye[1]} !`, 'Attrape le avec un "!!cat" !')
-         .setImage(ideye[2])
+         .addField(`C'est un ${dataBankK[kispawn][1]} !`, 'Attrape le avec un "!!cat" !')
+         .setImage(dataBankK[kispawn][3])
          .setColor("#351cc0")
          bot.channels.get("551556079067070474").send(embedp)
          catnum = kispawn
