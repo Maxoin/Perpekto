@@ -9,6 +9,7 @@ var ideye = ""
 var NumberOwOFin = 0
 var NumberOwO = 0
 var yuser = ""
+var gifss = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45]
 var gifs = {
     a: {
       nom: "Starlight Unicorn MoonDance",
@@ -187,9 +188,13 @@ var channelStockId = "557114023896678400";  //Max, met ici l'id du channel !
 
 var channelStockIdK = "557113676914491402"; 
 
+var channelStockIdG = "557151307371380736"; 
+
 var dataBank = []; //Contient des tableaux : C'est la base de données quand le bot est actif !
 
 var dataBankK = [];
+
+var dataBankG = [];
 
 //Declaration Fonction~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -223,6 +228,20 @@ function readK () { //lit le stockage discord et le met dans le stockage variabl
         )
         
     
+};
+
+function readK () { //lit le stockage discord et le met dans le stockage variable
+
+    // met le contenu des messages dans dataBank
+        (bot.channels.get(channelStockIdG).fetchMessages({ limit: 100 }) 
+            .then(messages => 
+               
+                messages.forEach(function(valeur , clé) {
+                    dataBankG.push(valeur.content.split(" * "));
+                })
+            )
+            .catch(console.error)
+        )  
 };
 
 function postReserve (id) { //poste un message dans l'espace de stockage discord ( en théorie, l'id des utilisateurs ayant fait !!OwOLog)
@@ -399,6 +418,9 @@ bot.on('message', message => { //Capture
   }
 }})
 
+bot.on('message', message => {
+    if(gotOwO(yuser, dataBankG[) && message.content.includes('!!' + gifs.j.nom)){
+})
 /*
   yuser = message.author.id
   if(gotOwO(yuser, "j") && message.content.includes('!!' + gifs.j.nom)){
