@@ -9,7 +9,6 @@ var ideye = ""
 var NumberOwOFin = 0
 var NumberOwO = 0
 var yuser = ""
-var gifss = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45]
 var gifs = {
     a: {
       nom: "Starlight Unicorn MoonDance",
@@ -419,7 +418,17 @@ bot.on('message', message => { //Capture
 }})
 
 bot.on('message', message => {
-    if(gotOwO(yuser, dataBankG[) && message.content.includes('!!' + gifs.j.nom)){
+    if(message.content.includes("!!" + dataBankG[][0])){
+        var temponom = dataBankG[][0]
+        var tempogif = dataBankG[][1]
+        var tempoannonce = dataBankG[][2]
+        if(gotOwO(yuser, temponom){
+            var gifembed = new Discord.RichEmbed()
+                .setTitle(tempoannonce)
+                .setImage(tempogif)
+                .setColor("#7caeec")
+        }       
+    }
 })
 /*
   yuser = message.author.id
