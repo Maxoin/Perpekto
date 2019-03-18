@@ -419,7 +419,7 @@ bot.on('message', message => {
         var temponom = dataBankG[NumberOwO][0]
         var tempogif = dataBankG[NumberOwO][1]
         var tempoannonce = dataBankG[NumberOwO][2]
-        if(gotOwO(yuser, temponom){
+        if(gotOwO(yuser, temponom)){
             var gifembed = new Discord.RichEmbed()
                 .setTitle(tempoannonce)
                 .setImage(tempogif)
