@@ -325,7 +325,7 @@ var mowo = {
 
 //Declaration Variables~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-var channelStockId = "552143842309046272";  //Max, met ici l'id du channel !
+var channelStockId = "591672121445580811";  //Max, met ici l'id du channel !
 
 var dataBank = []; //Contient des tableaux : C'est la base de données quand le bot est actif !
 
@@ -478,6 +478,7 @@ bot.on('message', message => {// same ^^^^ fait "check " + "quelque chose" pour 
 });
 
 bot.on('message', message => { //Appartion MOwOnster
+ read();
  if(message.content.includes("!!")){
   
  }else{
@@ -495,7 +496,7 @@ bot.on('message', message => { //Appartion MOwOnster
          .addField(`C'est un ${mowo.kispawn.nom} !`, 'Attrape le avec un "!!cat" !')
          .setImage(mowo. kispawn .image)
          .setColor("#351cc0")
-         bot.channels.get("552143793789599755").send(embedp)
+         bot.channels.get("617039961807650835").send(embedp)
          catnum = kispawn
          salon = message.channel.id
      }
