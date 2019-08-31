@@ -431,7 +431,7 @@ bot.on('message', message => { //help
       .addField("Prefix :", "!!", true)
       .addBlankField() 
       .addField("!!help", "Affiche les commandes du bot.")
-      .addField("!!OwOLog", "Commande à ne faire qu'une fois, pour se connecter au Bot.\n/!/ La faire plusieurs fois supprimera votre progression. /!/.")
+      .addField("!!OwOLog", "Commande à ne faire qu'une fois, pour se connecter au Bot.")
       .addField("!!cat", "Commande pour attraper un MOwOnster lorsqu'il apparait.")
       .addField("!!dispo", "Commande pour voir quels Emotes sont disponibles.")
       .setColor("#68f17d")
