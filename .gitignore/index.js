@@ -460,6 +460,7 @@ bot.on('message', message => { // !!OwOLog ! faisable plusieurs fois !
 bot.on('message', message => { //Log
     if (message.content === "!!Log") {
         read();
+        console.log(mowo[13])
         console.log("Wesh les relous, ce soir on fout le zbeul")
     }
 
@@ -490,11 +491,11 @@ bot.on('message', message => { //Appartion MOwOnster
      if(spawn <= 10){
        kispawn = Math.floor(Math.random() * Math.floor(26))
        console.log(kispawn)
-       console.log(mowo[kispawn].nom)
+       console.log(mowo.kispawn.nom)
        var embedp = new Discord.RichEmbed()
          .setTitle("Un MOwOnster est apparut !")
-         .addField(`C'est un ${mowo[kispawn].nom} !`, 'Attrape le avec un "!!cat" !')
-         .setImage(mowo[kispawn].image)
+         .addField(`C'est un ${mowo.kispawn.nom} !`, 'Attrape le avec un "!!cat" !')
+         .setImage(mowo. kispawn .image)
          .setColor("#351cc0")
          bot.channels.get("617039961807650835").send(embedp)
          catnum = kispawn
@@ -512,8 +513,8 @@ bot.on('message', message => { //Capture
     if(catnum === ""){
       console.log("'^'")
     }else{
-      add(yuser, mowo[catnum].gifattrib)
-      message.channel.send(`Bien jouer ! Tu viens de capturer un ${mowo[catnum].nom}, COwOmbatant !`)
+      add(yuser, mowo.catnum.gifattrib)
+      message.channel.send(`Bien jouer ! Tu viens de capturer un ${mowo.catnum.nom}, COwOmbatant !`)
       catnum = "" 
     }
   }
