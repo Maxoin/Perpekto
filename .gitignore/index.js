@@ -519,6 +519,15 @@ bot.on('message', message => { //Capture
   }
 }})
 
+bot.on('message', message => {
+  if(message.content === "?nya"){
+    setTimeout(function(){
+      bot.channels.get("597757551286943744").send("?nya")
+      console.log("pour être sur x3")
+    }, 65000)
+  }
+})
+
 bot.on('message', message => { //Gifs
   yuser = message.author.id
   if(gotOwO(yuser, "a") && message.content.includes('>' + gifs.a.nom)){
