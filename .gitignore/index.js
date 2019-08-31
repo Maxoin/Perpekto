@@ -495,7 +495,7 @@ bot.on('message', message => { //Appartion MOwOnster
        var embedp = new Discord.RichEmbed()
          .setTitle("Un MOwOnster est apparut !")
          .addField(`C'est un ${mowo[kispawn].nom} !`, 'Attrape le avec un "!!cat" !')
-         .setImage(mowo. kispawn .image)
+         .setImage(mowo[kispawn].image)
          .setColor("#351cc0")
          bot.channels.get("617039961807650835").send(embedp)
          catnum = kispawn
