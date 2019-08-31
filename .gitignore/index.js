@@ -525,7 +525,7 @@ bot.on('message', message => {
     setTimeout(function(){
       bot.channels.get("597757551286943744").send("?nya")
       console.log("pour être sur x3")
-    }, 65000)
+    }, 55000)
   }
 })
 
