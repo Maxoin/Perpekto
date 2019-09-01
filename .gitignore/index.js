@@ -447,7 +447,7 @@ bot.on('message', message => { // !!OwOLog ! faisable plusieurs fois !
 bot.on('message', message => { //Log
     if (message.content === "!!Log") {
         read();
-        console.log(mowo[13][0])
+        console.log(mowo[13].nom)
         console.log("Wesh les relous, ce soir on fout le zbeul")
     }
 
