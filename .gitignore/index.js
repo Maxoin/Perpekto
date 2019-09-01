@@ -479,7 +479,7 @@ bot.on('message', message => { //Appartion MOwOnster
    }else{
      var spawn = Math.floor(Math.random() * Math.floor(100))
      console.log("wala")
-     if(spawn <= 5){
+     if(spawn <= 7){
        kispawn = Math.floor(Math.random() * Math.floor(26))
        console.log(kispawn)
        console.log(mowo[kispawn].nom)
@@ -498,7 +498,7 @@ bot.on('message', message => { //Appartion MOwOnster
 bot.on('message', message => { //Capture
  if(message.content === "!!cat"){
   if (findUser(message.author.id) === -1){
-   
+    message.channel.send("Tu n'as pas encore de compte OwO\nTu peux réglé ça avec un ``!!OwOLog``")
   }else{
     yuser = message.author.id
     if(catnum === ""){
@@ -787,6 +787,9 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Dispo Emotes
  if(message.content === "!!dispo"){
+  if(findUser(message.author.id) === -1){
+    message.channel.send("Tu n'as pas encore de compte OwO\nTu peux réglé ça avec un ``!!OwOLog``")
+  }else{
    message.channel.send("Tes commandes te sont envoyés en MP, cher ami !")
   message.author.createDM().then(channel => {
     channel.send('Voici tes différentes commandes :\n//////////////////////')
@@ -868,4 +871,4 @@ bot.on('message', message => { //Dispo Emotes
    if(gotOwO(yuser, "z")){
     channel.send("> " + gifs.z.nom)
    }
-  })}})
+  })}}})
