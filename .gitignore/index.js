@@ -445,13 +445,18 @@ bot.on('message', message => { // !!OwOLog ! faisable plusieurs fois !
 });
 
 bot.on('message', message => { //Log
-    if (message.content === "!!Log") {
+    if (message.content === "!!Log1") {
         read();
-        console.log(mowo[13])
+        console.log(mowo[13][0])
         console.log("Wesh les relous, ce soir on fout le zbeul")
     }
 
-
+bot.on('message', message => { //Log
+    if (message.content === "!!Log2") {
+        read();
+        console.log(gifs[24][1])
+        console.log("Wesh les relous, ce soir on fout le zbeul")
+    }
 
 });
 
