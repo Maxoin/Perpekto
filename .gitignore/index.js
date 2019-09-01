@@ -456,18 +456,6 @@ bot.on('message', message => { //Log
 
 });
 
-
-bot.on('message', message => { //Log
-    if (message.content === "!!Log2") {
-        read();
-        console.log(mowo.12.nom)
-        console.log("Wesh les relous, ce soir on fout le zbeul")
-    }
-
-
-
-});
-
 bot.on('message', message => {// same ^^^^ fait "check " + "quelque chose" pour vérifier si tu l'as dans ton message dans le stockage discord. (le bot return un boolean)
     if(message.content === "!!check") {
         if(gotOwO(message.author.id, message.content.split(' ')[1] )) {
