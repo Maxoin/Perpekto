@@ -7,9 +7,9 @@ var kispawn = 0
 var yuser = ""
 var gifs = {
     a: {
-      nom: "à Reset",
+      nom: "Reset",
       gif: "https://media.tenor.com/images/afdf9f5a7139daadbab681b46e9060f1/tenor.gif",
-      annonce: "KUUWA ?!!!",
+      annonce: "COMMENT AS-TU OSÉ  ?!!!",
       effet: ""
     },
     b: {
@@ -19,7 +19,7 @@ var gifs = {
       effet: ""
     },
     c: {
-      nom: "Kawaiiance",
+      nom: "Kawaii",
       gif: "https://thumbs.gfycat.com/WellinformedDirectBorderterrier-size_restricted.gif",
       annonce: "On m'a appelé ? Jariv.",
       effet: ""
@@ -31,7 +31,7 @@ var gifs = {
       effet: ""
     },
     e: {
-      nom: "Gaster Bluester",
+      nom: "GB-Flee",
       gif: "https://media1.tenor.com/images/d4e922f6079875c6627f95311c3b4cfc/tenor.gif?itemid=5879725",
       annonce: "FUYONS, BLUESTER !",
       effet: ""
@@ -43,13 +43,13 @@ var gifs = {
       effet: ""
     },
     g: {
-      nom: "FONCEAITÊTEBAISSAIE",
+      nom: "Foncedanlta",
       gif: "http://media.tumblr.com/359458eec13d42e28d005c7446bbfe40/tumblr_inline_nclb9rRuHl1sm1eq0.gif  ",
       annonce: "LEROOOOOOOOOOOOOOOOOOOOOOOOOOOOY...",
       effet: ""
     },
     h: {
-      nom: "Viol D'âme",
+      nom: "Brainrape",
       gif: "https://thumbs.gfycat.com/ForsakenComplexAmurratsnake-size_restricted.gif",
       annonce: "***9666966696669666966696666669***",
       effet: ""
@@ -61,19 +61,19 @@ var gifs = {
       effet: ""
     },
     j: {
-      nom: "Bulle d'Eau",
+      nom: "Buldo",
       gif: "https://data.whicdn.com/images/53032229/original.gif",
       annonce: "BLBLBLBLBLBLLBLBLBLBLBLBLBLBLLBBLLBBLLBLB",
       effet: ""
     },
     k: {
-      nom: "Nonoeil d'Urgence",
+      nom: "Nonoeil",
       gif: "https://steamuserimages-a.akamaihd.net/ugc/394421071039533013/751406B81ABF25095895D17E4E781F7E1F011599/",
       annonce: "Je vais porté ton message ! J'y vole !",
       effet: ""
     },
     l: {
-      nom: "Coup d'Corn",
+      nom: "KoudKorn",
       gif: "https://media1.tenor.com/images/f74ea1b96c0291c15c0939364e79bc76/tenor.gif?itemid=12592212",
       annonce: "Ça tombe bien, j'en ai pleins !",
       effet: ""
@@ -85,25 +85,25 @@ var gifs = {
       effet: ""
     },
     n: {
-      nom: "Steam Sales",
+      nom: "Soldes",
       gif: "https://i.imgur.com/VsKmvT9.gif",
       annonce: "Tu as tout dépensé avant, patate !",
       effet: ""
     },
     o: {
-      nom: "Regard Cute",
+      nom: "Cuteness",
       gif: "https://2.bp.blogspot.com/-G_hxgx8N1J4/WKmuDdtP42I/AAAAAAAGByg/XBAjW6J139EbLAZACLwsOeix5qnJRquNgCLcB/s1600/AW379865_12.gif",
       annonce: "Ze veux que l'on me pat.",
       effet: ""
     },
     p: {
-      nom: "pat",
+      nom: "Pat",
       gif: "https://66.media.tumblr.com/b6492da3e16252d0d6be9a14b40f528a/tumblr_n6s3kx6dxT1tddjuxo1_500.gif",
       annonce: "Nyaa~",
       effet: ""
     },
     q: {
-      nom: "snob",
+      nom: "Snob",
       gif: "https://orig00.deviantart.net/3059/f/2015/140/3/e/close_of_up_by_fawfuls_minion-d8u1ntf.gif",
       annonce: "Fufufufufu~",
       effet: ""
@@ -115,13 +115,13 @@ var gifs = {
       effet: ""
     },
     s: {
-      nom: "nom",
+      nom: "Nom",
       gif: "https://media.giphy.com/media/39YrN5qQvUtfW/giphy.gif",
       annonce: "GATOOOOOOOONomnomnomnomnomnomnom",
       effet: ""
     },
     t: {
-      nom: "shrug",
+      nom: "Shrug",
       gif: "https://gifimage.net/wp-content/uploads/2018/11/puro-changed-gif-1.gif",
       annonce: "Hé bah ze sais pas.",
       effet: ""
@@ -133,13 +133,13 @@ var gifs = {
       effet: ""
     },
     v: {
-      nom: "Starlight Unicorn MoonDance",
+      nom: "SUMD",
       gif: "https://j.gifs.com/oY7Q3B.gif",
-      annonce: "Subit la puissance de Starlight Unicorn !",
+      annonce: "Subit la puissance de **Starlight Unicorn Moon Dance**!",
       effet: ""
     },
     w: {
-      nom: "Mochetée",
+      nom: "Pabo",
       gif: "https://66.media.tumblr.com/bd3c64511033f1a1ffa9ff47d95eb4dc/tumblr_nsu1h0Z2fl1uuck0ko8_400.gif",
       annonce: "Je ne suis pas moche ! Je suis un Scientifique fou ! Nyahahahahaidhqusofgbdhsqijvgsdkhfnis...",
       effet: ""
