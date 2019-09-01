@@ -514,7 +514,7 @@ bot.on('message', message => { //Capture
       console.log("'^'")
     }else{
       add(yuser, mowo[catnum][3])
-      message.channel.send(`Bien jouer ! Tu viens de capturer un ${mowo[catnum][1]}, COwOmbatant !`)
+      message.channel.send(`Bien joué ! Tu viens de capturer un ${mowo[catnum][1]}, COwOmbatant !`)
       catnum = "" 
     }
   }
@@ -531,221 +531,221 @@ bot.on('message', message => {
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "a") && message.content.includes('>' + gifs.a.nom)){
+  if(gotOwO(yuser, "a") && message.content.includes('>' + gifs[1][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.a.annonce)
-      .setImage(gifs.a.gif)
+      .setTitle(gifs[1][2])
+      .setImage(gifs[1][1])
       .setColor("#d28f49")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "b") && message.content.includes('>' + gifs.b.nom)){
+  if(gotOwO(yuser, "b") && message.content.includes('>' + gifs[2][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.b.annonce)
-      .setImage(gifs.b.gif)
+      .setTitle(gifs[2][2])
+      .setImage(gifs[2][1])
       .setColor("#dc2d96")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "c") && message.content.includes('>' + gifs.c.nom)){
+  if(gotOwO(yuser, "c") && message.content.includes('>' + gifs[3][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.c.annonce)
-      .setImage(gifs.c.gif)
+      .setTitle(gifs[3][2])
+      .setImage(gifs[3][1])
       .setColor("#e3b072")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "d") && message.content.includes('>' + gifs.d.nom)){
+  if(gotOwO(yuser, "d") && message.content.includes('>' + gifs[4][0])){
    console.log("TARACE LA HACHE")
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.d.annonce)
-      .setImage(gifs.d.gif)
+      .setTitle(gifs[4][2])
+      .setImage(gifs[4][1])
       .setColor("#72d7e3")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "e") && message.content.includes('>' + gifs.e.nom)){
+  if(gotOwO(yuser, "e") && message.content.includes('>' + gifs[5][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.e.annonce)
-      .setImage(gifs.e.gif)
+      .setTitle(gifs[5][2])
+      .setImage(gifs[5][1])
       .setColor("#8bf3f0")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "f") && message.content.includes('>' + gifs.f.nom)){
+  if(gotOwO(yuser, "f") && message.content.includes('>' + gifs[6][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.f.annonce)
-      .setImage(gifs.f.gif)
+      .setTitle(gifs[6][2])
+      .setImage(gifs[6][1])
       .setColor("#8a00ef")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "g") && message.content.includes('>' + gifs.g.nom)){
+  if(gotOwO(yuser, "g") && message.content.includes('>' + gifs[7][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.g.annonce)
-      .setImage(gifs.g.gif)
+      .setTitle(gifs[7][2])
+      .setImage(gifs[7][1])
       .setColor("#ff853c")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "h") && message.content.includes('>' + gifs.h.nom)){
+  if(gotOwO(yuser, "h") && message.content.includes('>' + gifs[8][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.h.annonce)
-      .setImage(gifs.h.gif)
+      .setTitle(gifs[8][2])
+      .setImage(gifs[8][1])
       .setColor("#002a5e")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "i") && message.content.includes('>' + gifs.i.nom)){
+  if(gotOwO(yuser, "i") && message.content.includes('>' + gifs[9][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.i.annonce)
-      .setImage(gifs.i.gif)
+      .setTitle(gifs[9][2])
+      .setImage(gifs[9][1])
       .setColor("#e2ba40")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "j") && message.content.includes('>' + gifs.j.nom)){
+  if(gotOwO(yuser, "j") && message.content.includes('>' + gifs[10][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.j.annonce)
-      .setImage(gifs.j.gif)
+      .setTitle(gifs[10][2])
+      .setImage(gifs[10][1])
       .setColor("#7caeec")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "k") && message.content.includes('>' + gifs.k.nom)){
+  if(gotOwO(yuser, "k") && message.content.includes('>' + gifs[11][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.k.annonce)
-      .setImage(gifs.k.gif)
+      .setTitle(gifs[11][2])
+      .setImage(gifs[11][1])
       .setColor("#ff0000")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "l") && message.content.includes('>' + gifs.l.nom)){
+  if(gotOwO(yuser, "l") && message.content.includes('>' + gifs[12][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.l.annonce)
-      .setImage(gifs.l.gif)
+      .setTitle(gifs[12][2])
+      .setImage(gifs[12][1])
       .setColor("#ffd3d3")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "m") && message.content.includes('>' + gifs.m.nom)){
+  if(gotOwO(yuser, "m") && message.content.includes('>' + gifs[13][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.m.annonce)
-      .setImage(gifs.m.gif)
+      .setTitle(gifs[13][2])
+      .setImage(gifs[13][1])
       .setColor("#5b28a6")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "n") && message.content.includes('>' + gifs.n.nom)){
+  if(gotOwO(yuser, "n") && message.content.includes('>' + gifs[14][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.n.annonce)
-      .setImage(gifs.n.gif)
+      .setTitle(gifs[14][2])
+      .setImage(gifs[14][1])
       .setColor("#ecea00")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "o") && message.content.includes('>' + gifs.o.nom)){
+  if(gotOwO(yuser, "o") && message.content.includes('>' + gifs[15][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.o.annonce)
-      .setImage(gifs.o.gif)
+      .setTitle(gifs[15][2])
+      .setImage(gifs[15][1])
       .setColor("#ffffff")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "p") && message.content.includes('>' + gifs.p.nom)){
+  if(gotOwO(yuser, "p") && message.content.includes('>' + gifs[16][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.p.annonce)
-      .setImage(gifs.p.gif)
+      .setTitle(gifs[16][2])
+      .setImage(gifs[16][1])
       .setColor("#edb7ff")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "q") && message.content.includes('>' + gifs.q.nom)){
+  if(gotOwO(yuser, "q") && message.content.includes('>' + gifs[17][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.q.annonce)
-      .setImage(gifs.q.gif)
+      .setTitle(gifs[17][2])
+      .setImage(gifs[17][1])
       .setColor("#41fc44")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "r") && message.content.includes('>' + gifs.r.nom)){
+  if(gotOwO(yuser, "r") && message.content.includes('>' + gifs[18][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.r.annonce)
-      .setImage(gifs.r.gif)
+      .setTitle(gifs[18][2])
+      .setImage(gifs[18][1])
       .setColor("#ff881c")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "s") && message.content.includes('>' + gifs.s.nom)){
+  if(gotOwO(yuser, "s") && message.content.includes('>' + gifs[19][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.s.annonce)
-      .setImage(gifs.s.gif)
+      .setTitle(gifs[19][2])
+      .setImage(gifs[19][1])
       .setColor("#3b82db")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "t") && message.content.includes('>' + gifs.t.nom)){
+  if(gotOwO(yuser, "t") && message.content.includes('>' + gifs[20][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.t.annonce)
-      .setImage(gifs.t.gif)
+      .setTitle(gifs[20][2])
+      .setImage(gifs[20][1])
       .setColor("#595959")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "u") && message.content.includes('>' + gifs.u.nom)){
+  if(gotOwO(yuser, "u") && message.content.includes('>' + gifs[21][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.u.annonce)
-      .setImage(gifs.u.gif)
+      .setTitle(gifs[21][2])
+      .setImage(gifs[21][1])
       .setColor("#000000")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "v") && message.content.includes('>' + gifs.v.nom)){
+  if(gotOwO(yuser, "v") && message.content.includes('>' + gifs[22][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.v.annonce)
-      .setImage(gifs.v.gif)
+      .setTitle(gifs[22][2])
+      .setImage(gifs[22][1])
       .setColor("#b426c1")
     message.channel.send(embed);
 }})
@@ -753,10 +753,10 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "w") && message.content.includes('>' + gifs.w.nom)){
+  if(gotOwO(yuser, "w") && message.content.includes('>' + gifs[23][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.w.annonce)
-      .setImage(gifs.w.gif)
+      .setTitle(gifs[23][2])
+      .setImage(gifs[23][1])
       .setColor("#392bfe")
     message.channel.send(embed);
 }})
@@ -764,10 +764,10 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "x") && message.content.includes('>' + gifs.x.nom)){
+  if(gotOwO(yuser, "x") && message.content.includes('>' + gifs[24][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.x.annonce)
-      .setImage(gifs.x.gif)
+      .setTitle(gifs[24][2])
+      .setImage(gifs[24][1])
       .setColor("#ff6900")
     message.channel.send(embed);
 }})
@@ -775,20 +775,20 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "y") && message.content.includes('>' + gifs.y.nom)){
+  if(gotOwO(yuser, "y") && message.content.includes('>' + gifs[25][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.y.annonce)
-      .setImage(gifs.y.gif)
+      .setTitle(gifs[25][2])
+      .setImage(gifs[25][1])
       .setColor("#ff6900")
     message.channel.send(embed);
 }})
 
 bot.on('message', message => { //Gifs
   yuser = message.author.id
-  if(gotOwO(yuser, "z") && message.content.includes('>' + gifs.y.nom)){
+  if(gotOwO(yuser, "z") && message.content.includes('>' + gifs[26][0])){
     var embed = new Discord.RichEmbed()
-      .setTitle(gifs.y.annonce)
-      .setImage(gifs.y.gif)
+      .setTitle(gifs[26][2])
+      .setImage(gifs[26][1])
       .setColor("#ff6900")
     message.channel.send(embed);
 }})
@@ -796,79 +796,79 @@ bot.on('message', message => { //Gifs
 bot.on('message', message => { //Dispo Emotes
  if(message.content === "!!dispo"){
    if(gotOwO(yuser, "a")){
-    message.channel.send(gifs.a.nom)
+    message.channel.send(gifs[1][0])
    }
    if(gotOwO(yuser, "b")){
-    message.channel.send(gifs.b.nom)
+    message.channel.send(gifs[2][0])
    }
    if(gotOwO(yuser, "c")){
-    message.channel.send(gifs.c.nom)
+    message.channel.send(gifs[3][0])
    }
    if(gotOwO(yuser, "d")){
-    message.channel.send(gifs.d.nom)
+    message.channel.send(gifs[4][0])
    }
    if(gotOwO(yuser, "e")){
-    message.channel.send(gifs.e.nom)
+    message.channel.send(gifs[5][0])
    }
    if(gotOwO(yuser, "f")){
-    message.channel.send(gifs.f.nom)
+    message.channel.send(gifs[6][0])
    }
    if(gotOwO(yuser, "g")){
-    message.channel.send(gifs.g.nom)
+    message.channel.send(gifs[7][0])
    }
    if(gotOwO(yuser, "h")){
-    message.channel.send(gifs.h.nom)
+    message.channel.send(gifs[8][0])
    }
    if(gotOwO(yuser, "i")){
-    message.channel.send(gifs.i.nom)
+    message.channel.send(gifs[9][0])
    }
    if(gotOwO(yuser, "j")){
-    message.channel.send(gifs.j.nom)
+    message.channel.send(gifs[10][0])
    }
    if(gotOwO(yuser, "k")){
-    message.channel.send(gifs.k.nom)
+    message.channel.send(gifs[11][0])
    }
    if(gotOwO(yuser, "l")){
-    message.channel.send(gifs.l.nom)
+    message.channel.send(gifs[12][0])
    }
    if(gotOwO(yuser, "m")){
-    message.channel.send(gifs.m.nom)
+    message.channel.send(gifs[13][0])
    }
    if(gotOwO(yuser, "n")){
-    message.channel.send(gifs.n.nom)
+    message.channel.send(gifs[14][0])
    }
    if(gotOwO(yuser, "o")){
-    message.channel.send(gifs.o.nom)
+    message.channel.send(gifs[15][0])
    }
    if(gotOwO(yuser, "p")){
-    message.channel.send(gifs.p.nom)
+    message.channel.send(gifs[16][0])
    }
    if(gotOwO(yuser, "q")){
-    message.channel.send(gifs.q.nom)
+    message.channel.send(gifs[17][0])
    }
    if(gotOwO(yuser, "r")){
-    message.channel.send(gifs.r.nom)
+    message.channel.send(gifs[18][0])
    }
    if(gotOwO(yuser, "s")){
-    message.channel.send(gifs.s.nom)
+    message.channel.send(gifs[19][0])
    }
    if(gotOwO(yuser, "t")){
-    message.channel.send(gifs.t.nom)
+    message.channel.send(gifs[20][0])
    }
    if(gotOwO(yuser, "u")){
-    message.channel.send(gifs.u.nom)
+    message.channel.send(gifs[21][0])
    }
    if(gotOwO(yuser, "v")){
-    message.channel.send(gifs.v.nom)
+    message.channel.send(gifs[22][0])
    }
    if(gotOwO(yuser, "w")){
-    message.channel.send(gifs.w.nom)
+    message.channel.send(gifs[23][0])
    }
    if(gotOwO(yuser, "x")){
     message.channel.send(gifs.x.nom)
    }
    if(gotOwO(yuser, "y")){
-    message.channel.send(gifs.y.nom)
+    message.channel.send(gifs[25][0])
    }
    if(gotOwO(yuser, "z")){
     message.channel.send(gifs.z.nom)
