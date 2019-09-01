@@ -407,6 +407,7 @@ function gotOwO (id, numOwO) { //Verifie si un user a un OwO ! return true si il
 bot.on('ready',() => {
     console.log('Bot Ready')
     bot.channels.get("597757551286943744").send("?nya")
+    read();
 })
 
 bot.login(process.env.token);
