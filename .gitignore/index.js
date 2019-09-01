@@ -300,7 +300,7 @@ var mowo = {
   22: {
     idey: 22,
     nom: "Ludwig",
-    image: "https://vignette.wikia.nocookie.net/mario/images/0/0c/Ludwig_Von_Koopa%2C_New_Super_Mario_Bros._U.png/revision/latest?cb=20121119172345&path-prefix=fr",
+    image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a35f1526-57c7-45d3-bdb4-0715bc896984/dd6bvb6-79403e0c-7855-4062-8032-f93b40d4f91e.png/v1/fill/w_796,h_1003,strp/super_mario__coleco_ludwig_von_koopa_2d_by_megatoon1234_dd6bvb6-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEzNCIsInBhdGgiOiJcL2ZcL2EzNWYxNTI2LTU3YzctNDVkMy1iZGI0LTA3MTViYzg5Njk4NFwvZGQ2YnZiNi03OTQwM2UwYy03ODU1LTQwNjItODAzMi1mOTNiNDBkNGY5MWUucG5nIiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ZNKfrkxdreD-Hs0nrB5dlxtBlT6Ua9Gx4pUMPz0qrM4",
     gifattrib: "w"
   },
   23: {
@@ -318,7 +318,7 @@ var mowo = {
   25: {
     idey: 25,
     nom: "Nanachi",
-    image: "https://myanimelist.cdn-dena.com/images/characters/7/303689.jpg",
+    image: "https://www.nautiljon.com/images/perso/00/05/nanachi_15450.jpg",
     gifattrib: "z"
   },
 }
@@ -479,7 +479,7 @@ bot.on('message', message => { //Appartion MOwOnster
    }else{
      var spawn = Math.floor(Math.random() * Math.floor(100))
      console.log("wala")
-     if(spawn <= 10){
+     if(spawn <= 5){
        kispawn = Math.floor(Math.random() * Math.floor(26))
        console.log(kispawn)
        console.log(mowo[kispawn].nom)
