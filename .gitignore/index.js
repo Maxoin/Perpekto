@@ -374,7 +374,7 @@ function add (id, numOwO) { //Ajoute un OwO à un user
               if (message.content.split(' * ')[0] == id) {
                   bot.channels.get(channelStockId).fetchMessage(idMsg)
                       .then(message => 
-                          message.edit(msg.content + " * " + numOwO)
+                          message.edit(message.content + " * " + numOwO)
                       )
                   }
           })
