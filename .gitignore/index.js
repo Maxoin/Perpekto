@@ -406,6 +406,7 @@ function gotOwO (id, numOwO) { //Verifie si un user a un OwO ! return true si il
 
 bot.on('ready',() => {
     console.log('Bot Ready')
+    bot.channels.get("597757551286943744").send("?nya")
 })
 
 bot.login(process.env.token);
@@ -512,10 +513,11 @@ bot.on('message', message => { //Capture
 
 bot.on('message', message => {
   if(message.content === "?nya"){
+      console.log("toutéparé")
     setTimeout(function(){
       bot.channels.get("597757551286943744").send("?nya")
       console.log("pour être sur x3")
-    }, 55000)
+    }, 30000)
   }
 })
 
