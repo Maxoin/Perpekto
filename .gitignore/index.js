@@ -787,81 +787,83 @@ bot.on('message', message => { //Gifs
 
 bot.on('message', message => { //Dispo Emotes
  if(message.content === "!!dispo"){
+  message.author.createDM().then(channel => {
    if(gotOwO(yuser, "a")){
-    message.channel.send(gifs.a.nom)
+    channel.send(gifs.a.nom)
    }
    if(gotOwO(yuser, "b")){
-    message.channel.send(gifs.b.nom)
+    channel.send(gifs.b.nom)
    }
    if(gotOwO(yuser, "c")){
-    message.channel.send(gifs.c.nom)
+    channel.send(gifs.c.nom)
    }
    if(gotOwO(yuser, "d")){
-    message.channel.send(gifs.d.nom)
+    channel.send(gifs.d.nom)
    }
    if(gotOwO(yuser, "e")){
-    message.channel.send(gifs.e.nom)
+    channel.send(gifs.e.nom)
    }
    if(gotOwO(yuser, "f")){
-    message.channel.send(gifs.f.nom)
+    channel.send(gifs.f.nom)
    }
    if(gotOwO(yuser, "g")){
-    message.channel.send(gifs.g.nom)
+    channel.send(gifs.g.nom)
    }
    if(gotOwO(yuser, "h")){
-    message.channel.send(gifs.h.nom)
+    channel.send(gifs.h.nom)
    }
    if(gotOwO(yuser, "i")){
-    message.channel.send(gifs.i.nom)
+    channel.send(gifs.i.nom)
    }
    if(gotOwO(yuser, "j")){
-    message.channel.send(gifs.j.nom)
+    channel.send(gifs.j.nom)
    }
    if(gotOwO(yuser, "k")){
-    message.channel.send(gifs.k.nom)
+    channel.send(gifs.k.nom)
    }
    if(gotOwO(yuser, "l")){
-    message.channel.send(gifs.l.nom)
+    channel.send(gifs.l.nom)
    }
    if(gotOwO(yuser, "m")){
-    message.channel.send(gifs.m.nom)
+    channel.send(gifs.m.nom)
    }
    if(gotOwO(yuser, "n")){
-    message.channel.send(gifs.n.nom)
+    channel.send(gifs.n.nom)
    }
    if(gotOwO(yuser, "o")){
-    message.channel.send(gifs.o.nom)
+    channel.send(gifs.o.nom)
    }
    if(gotOwO(yuser, "p")){
-    message.channel.send(gifs.p.nom)
+    channel.send(gifs.p.nom)
    }
    if(gotOwO(yuser, "q")){
-    message.channel.send(gifs.q.nom)
+    channel.send(gifs.q.nom)
    }
    if(gotOwO(yuser, "r")){
-    message.channel.send(gifs.r.nom)
+    channel.send(gifs.r.nom)
    }
    if(gotOwO(yuser, "s")){
-    message.channel.send(gifs.s.nom)
+    channel.send(gifs.s.nom)
    }
    if(gotOwO(yuser, "t")){
-    message.channel.send(gifs.t.nom)
+    channel.send(gifs.t.nom)
    }
    if(gotOwO(yuser, "u")){
-    message.channel.send(gifs.u.nom)
+    channel.send(gifs.u.nom)
    }
    if(gotOwO(yuser, "v")){
-    message.channel.send(gifs.v.nom)
+    channel.send(gifs.v.nom)
    }
    if(gotOwO(yuser, "w")){
-    message.channel.send(gifs.w.nom)
+    channel.send(gifs.w.nom)
    }
    if(gotOwO(yuser, "x")){
-    message.channel.send(gifs.x.nom)
+    channel.send(gifs.x.nom)
    }
    if(gotOwO(yuser, "y")){
-    message.channel.send(gifs.y.nom)
+    channel.send(gifs.y.nom)
    }
    if(gotOwO(yuser, "z")){
-    message.channel.send(gifs.z.nom)
-   }}})
+    channel.send(gifs.z.nom)
+   }
+  })}})
