@@ -497,7 +497,7 @@ bot.on('message', message => { //Appartion MOwOnster
          .addField(`C'est un ${mowo[kispawn][1]} !`, 'Attrape le avec un "!!cat" !')
          .setImage(mowo[kispawn][2])
          .setColor("#351cc0")
-         bot.channels.get("617632639171559437").send(embedp)
+         bot.channels.get("617644715373887500").send(embedp)
          catnum = kispawn
          salon = message.channel.id
      }
