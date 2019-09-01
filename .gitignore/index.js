@@ -408,7 +408,7 @@ bot.on('ready',() => {
     console.log('Bot Ready')
 })
 
-bot.login("NDk3NTEyMDczMDM1Nzc2MDAw.XWuWJQ.kWUkyCLs1G3MWTBr-iMc_5lHMX8");//process.env.token
+bot.login("process.env.token");
 
 bot.on('message', message => { //help
   if(message.content === "!!help"){
