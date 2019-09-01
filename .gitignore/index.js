@@ -852,12 +852,12 @@ bot.on('message', message => { //Dispo Emotes
     message.channel.send(gifs[23][0])
    }
    if(gotOwO(yuser, "x")){
-    message.channel.send(gifs.x.nom)
+    message.channel.send(gifs[24][0])
    }
    if(gotOwO(yuser, "y")){
     message.channel.send(gifs[25][0])
    }
    if(gotOwO(yuser, "z")){
-    message.channel.send(gifs.z.nom)
+    message.channel.send(gifs[26][0])
    }
 }})
