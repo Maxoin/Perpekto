@@ -367,32 +367,19 @@ function findUser (id) { //à partir de l'id d'un user, trouve l'indice de sa "f
 }
 
 function add (id, numOwO) { //Ajoute un OwO à un user
-    if (findUser(id) === -1) {    
-
-        
-
-        bot.channels.get(channelStockId).fetchMessages({ limit: 100 }) //Trouve le message de stockage discord de l'user puis l'edit pour ajouter le owo
-
-            .then(messages => 
-                messages.forEach(function(msg, idMsg) {
-                    
-                    if (msg.content.split(' * ')[0] === id) {
-                        bot.channels.get(channelStockId).fetchMessage(idMsg)
-                            .then(message => 
-                                message.edit(msg.content + " * " + numOwO)
-                            
-                            )
-                            .catch(console.error)
-                    }
-                })
-            )
-            .catch(console.error)
-
-        dataBank[findUser(id)].push(numOwO); //Ajoute le owo dans le stockage variable
-    
-
-    }
-
+    if (findUser(id) != -1) {
+  bot.channels.get(channelStockId).fetchMessages({ limit: 100 }) //Trouve le message de stockage discord de l'user puis l'edit
+      .then(messages => 
+          messages.forEach(function(message, idMsg) {
+              if (message.content.split(' * ')[0] == id) {
+                  bot.channels.get(channelStockId).fetchMessage(idMsg)
+                      .then(message => 
+                          message.edit(msg.content + " * " + numOwO)
+                      )
+                  }
+          })
+      )
+}
 }
 
 function gotOwO (id, numOwO) { //Verifie si un user a un OwO ! return true si il l'a, return false sinon
@@ -497,7 +484,7 @@ bot.on('message', message => { //Appartion MOwOnster
          .addField(`C'est un ${mowo[kispawn][1]} !`, 'Attrape le avec un "!!cat" !')
          .setImage(mowo[kispawn][2])
          .setColor("#351cc0")
-         bot.channels.get("617644715373887500").send(embedp)
+         bot.channels.get("617632639171559437").send(embedp)
          catnum = kispawn
          salon = message.channel.id
      }
