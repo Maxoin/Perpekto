@@ -1,344 +1,24 @@
 const Discord = require('discord.js');
 var bot = new Discord.Client();
 
-var catnum = ""
-var salon = ""
-var kispawn = 0
-var yuser = ""
-var gifs = {
-    a: {
-      nom: "Reset",
-      gif: "https://media.tenor.com/images/afdf9f5a7139daadbab681b46e9060f1/tenor.gif",
-      annonce: "COMMENT AS-TU OSÉ  ?!!!",
-      effet: ""
-    },
-    b: {
-      nom: "POM",
-      gif: "https://i.pinimg.com/originals/b2/98/3a/b2983aa96a2c2078efd700f363c2a41c.gif",
-      annonce: "Une pomme ?! OU ÇA ??!",
-      effet: ""
-    },
-    c: {
-      nom: "Kawaii",
-      gif: "https://thumbs.gfycat.com/WellinformedDirectBorderterrier-size_restricted.gif",
-      annonce: "On m'a appelé ? Jariv.",
-      effet: ""
-    },
-    d: {
-      nom: "Hachwar",
-      gif: "https://i.makeagif.com/media/3-07-2016/kDRsOC.gif",
-      annonce: "...",
-      effet: ""
-    },
-    e: {
-      nom: "GB-Flee",
-      gif: "https://media1.tenor.com/images/d4e922f6079875c6627f95311c3b4cfc/tenor.gif?itemid=5879725",
-      annonce: "FUYONS, BLUESTER !",
-      effet: ""
-    },
-    f: {
-      nom: "Dab",
-      gif: "https://img.fireden.net/v/image/1540/37/1540371782616.gif",
-      annonce: "Attaque de type poison !",
-      effet: ""
-    },
-    g: {
-      nom: "Foncedanlta",
-      gif: "http://media.tumblr.com/359458eec13d42e28d005c7446bbfe40/tumblr_inline_nclb9rRuHl1sm1eq0.gif  ",
-      annonce: "LEROOOOOOOOOOOOOOOOOOOOOOOOOOOOY...",
-      effet: ""
-    },
-    h: {
-      nom: "Brainrape",
-      gif: "https://thumbs.gfycat.com/ForsakenComplexAmurratsnake-size_restricted.gif",
-      annonce: "***9666966696669666966696666669***",
-      effet: ""
-    },
-    i: {
-      nom: "Lance-Patate",
-      gif: "https://localtvwqad.files.wordpress.com/2014/10/rocket-explosion.gif?w=400&h=225&crop=1",
-      annonce: "Poussez vous. Voila le Lance-Patate.",
-      effet: ""
-    },
-    j: {
-      nom: "Buldo",
-      gif: "https://data.whicdn.com/images/53032229/original.gif",
-      annonce: "BLBLBLBLBLBLLBLBLBLBLBLBLBLBLLBBLLBBLLBLB",
-      effet: ""
-    },
-    k: {
-      nom: "Nonoeil",
-      gif: "https://steamuserimages-a.akamaihd.net/ugc/394421071039533013/751406B81ABF25095895D17E4E781F7E1F011599/",
-      annonce: "Je vais porté ton message ! J'y vole !",
-      effet: ""
-    },
-    l: {
-      nom: "KoudKorn",
-      gif: "https://media1.tenor.com/images/f74ea1b96c0291c15c0939364e79bc76/tenor.gif?itemid=12592212",
-      annonce: "Ça tombe bien, j'en ai pleins !",
-      effet: ""
-    },
-    m: {
-      nom: "Machouille",
-      gif: "http://img3.wikia.nocookie.net/__cb20140826061016/freddy-fazbears-pizza/images/3/31/Bonnie_blarg.gif",
-      annonce: "ANYAMNYAMNYAMNYAMNYAMNYAMNYAMNYAM",
-      effet: ""
-    },
-    n: {
-      nom: "Soldes",
-      gif: "https://i.imgur.com/VsKmvT9.gif",
-      annonce: "Tu as tout dépensé avant, patate !",
-      effet: ""
-    },
-    o: {
-      nom: "Cuteness",
-      gif: "https://2.bp.blogspot.com/-G_hxgx8N1J4/WKmuDdtP42I/AAAAAAAGByg/XBAjW6J139EbLAZACLwsOeix5qnJRquNgCLcB/s1600/AW379865_12.gif",
-      annonce: "Ze veux que l'on me pat.",
-      effet: ""
-    },
-    p: {
-      nom: "Pat",
-      gif: "https://66.media.tumblr.com/b6492da3e16252d0d6be9a14b40f528a/tumblr_n6s3kx6dxT1tddjuxo1_500.gif",
-      annonce: "Nyaa~",
-      effet: ""
-    },
-    q: {
-      nom: "Snob",
-      gif: "https://orig00.deviantart.net/3059/f/2015/140/3/e/close_of_up_by_fawfuls_minion-d8u1ntf.gif",
-      annonce: "Fufufufufu~",
-      effet: ""
-    },
-    r: {
-      nom: "Sasukoeil",
-      gif: "https://media2.giphy.com/media/mzYQ4fp5jn9SM/source.gif",
-      annonce: "あなたはまだそれを知りませんが、あなたはすでに死んでいます。",
-      effet: ""
-    },
-    s: {
-      nom: "Nom",
-      gif: "https://media.giphy.com/media/39YrN5qQvUtfW/giphy.gif",
-      annonce: "GATOOOOOOOONomnomnomnomnomnomnom",
-      effet: ""
-    },
-    t: {
-      nom: "Shrug",
-      gif: "https://gifimage.net/wp-content/uploads/2018/11/puro-changed-gif-1.gif",
-      annonce: "Hé bah ze sais pas.",
-      effet: ""
-    },
-    u: {
-      nom: "Niklavi",
-      gif: "https://lh3.googleusercontent.com/-TC6LitvVzMc/WPKH_Ro4nqI/AAAAAAAAB4I/jEnC7uoJF6EnyFz6PQyOhtgmaoPG7lWoQCJoC/w290-h300-n-rw/tumblr_inline_nuls3cVXSa1si73t5_500.gif",
-      annonce: "NIKAIVOU",
-      effet: ""
-    },
-    v: {
-      nom: "SUMD",
-      gif: "https://j.gifs.com/oY7Q3B.gif",
-      annonce: "Subit la puissance de **Starlight Unicorn Moon Dance**!",
-      effet: ""
-    },
-    w: {
-      nom: "Pabo",
-      gif: "https://66.media.tumblr.com/bd3c64511033f1a1ffa9ff47d95eb4dc/tumblr_nsu1h0Z2fl1uuck0ko8_400.gif",
-      annonce: "Je ne suis pas moche ! Je suis un Scientifique fou ! Nyahahahahaidhqusofgbdhsqijvgsdkhfnis...",
-      effet: ""
-    },
-    x: {
-      nom: "Lance-Flamme",
-      gif: "https://media1.tenor.com/images/a92907da589b73ac05677929a980b77e/tenor.gif?itemid=5634757",
-      annonce: "LE FEUUUUUUUUUUUUW",
-      effet: ""
-    },
-    y: {
-      nom: "/tp",
-      gif: "https://66.media.tumblr.com/e562d21b6f785a012eea8b2ce44bd37c/tumblr_ns3tpxzq391upx3fco1_500.gif",
-      annonce: "Bawoup",
-      effet: ""
-    },
-    z: {
-      nom: "wantmiam",
-      gif: "http://pa1.narvii.com/6608/b97b677870ef9a17a55ad974892b4efb08699116_00.gif",
-      annonce: "Z'ai faim, ze peux avwar à manzer, ssiteuplait ?",
-      effet: ""
-    }
-}
-
-var mowo = {
-  0: {
-    idey: 0,
-    nom: "Birdo",
-    image: "https://vignette.wikia.nocookie.net/mario/images/a/a2/Birdo_MP9.png/revision/latest?cb=20130718081823&path-prefix=fr",
-    gifattrib: "b"
-  },
-  1: {
-    idey: 1,
-    nom: "Powtaytow",
-    image: "https://i.imgur.com/7duC8bA.jpg",
-    gifattrib: "i"
-  },
-  2: {
-    idey: 2,
-    nom: "Resetti",
-    image: "https://vignette.wikia.nocookie.net/slg/images/2/2b/Mr._Resetti_Animal_crossing.png/revision/latest?cb=20160621155518&path-prefix=fr",
-    gifattrib: "a"
-  },
-  3: {
-    idey: 3,
-    nom: "Puro",
-    image: "https://i.pinimg.com/originals/84/56/97/8456972aa1ba1efa39454490e4a944fd.jpg",
-    gifattrib: "t"
-  },
-  4: {
-    idey: 4,
-    nom: "Dabweegi",
-    image: "https://ih0.redbubble.net/image.416146853.3061/ap,550x550,12x16,1,transparent,t.u2.png",
-    gifattrib: "f"
-  },
-  5: {
-    idey: 5,
-    nom: "Leeroy Jenkins",
-    image: "https://www.hearthnews.fr/images/Leeroy_jenkins.jpg",
-    gifattrib: "g"
-  },
-  6: {
-    idey: 6,
-    nom: "Mockey",
-    image: "https://t3.rbxcdn.com/d8c22f991ee4410a29ca1ace30a932ed",
-    gifattrib: "u"
-  },
-  7: {
-    idey: 7,
-    nom: "Cyber-Pépito",
-    image: "https://i.servimg.com/u/f58/19/58/55/75/granol10.png",
-    gifattrib: "v"
-  },
-  8: {
-    idey: 8,
-    nom: "Hippo",
-    image: "https://www.nautiljon.com/images/perso/00/83/hippo_10338.jpg",
-    gifattrib: "j"
-  },
-  9: {
-    idey: 9,
-    nom: "Oeil de Chtulu",
-    image: "http://images6.fanpop.com/image/photos/35200000/Eye-Of-Cthulhu-terraria-35278349-894-894.jpg",
-    gifattrib: "k"
-  },
-  10: {
-    idey: 10,
-    nom: "Chi Chi",
-    image: "https://vignette.wikia.nocookie.net/gumball/images/9/9e/Chi_Chi_vector.png/revision/latest?cb=20170816000524&path-prefix=fr",
-    gifattrib: "l"
-  },
-  11: {
-    idey: 11,
-    nom: "Pyroli",
-    image: "https://i.imgur.com/qhjpDlu.jpg",
-    gifattrib: "r"
-  },
-  12: {
-    idey: 12,
-    nom: "Ombrage",
-    image: "https://i.skyrock.net/7195/83917195/pics/3130998830_1_2_pWX0b1o8.png",
-    gifattrib: "m"
-  },
-  13: {
-    idey: 13,
-    nom: "Fouinar",
-    image: "https://4.bp.blogspot.com/-2pU-thJnlsg/VynJDvvpgOI/AAAAAAAACsg/mG9bvwvCL9sJU9JJQkfy-U3GpJiR9vIUACLcB/s1600/1317341303036.png",
-    gifattrib: "c"
-  },
-  14: {
-    idey: 14,
-    nom: "Bulle",
-    image: "https://vignette.wikia.nocookie.net/powerpuff/images/f/f9/Bulle_Profile.png/revision/latest/scale-to-width-down/260?cb=20180905192732&path-prefix=fr",
-    gifattrib: "d"
-  },
-  15: {
-    idey: 15,
-    nom: "Blueberry",
-    image: "https://ih1.redbubble.net/image.213382678.7353/poster%2C210x230%2Cf8f8f8-pad%2C210x230%2Cf8f8f8.lite-1u5.jpg",
-    gifattrib: "e"
-  },
-  16: {
-    idey: 16,
-    nom: "Ben Drowned",
-    image: "https://i.pinimg.com/originals/89/54/6f/89546f402cca3c85bf74a080407a684e.jpg",
-    gifattrib: "h"
-  },
-  17: {
-    idey: 17,
-    nom: "Gaben",
-    image: "https://www.pcgamesn.com/wp-content/uploads/2018/10/gabe_newell_meme-580x334.jpg",
-    gifattrib: "n"
-  },
-  18: {
-    idey: 18,
-    nom: "Gracowitz",
-    image: "https://vignette.wikia.nocookie.net/mario/images/5/59/M%26LSS%2BLSDB-Gracowitz.png/revision/latest/scale-to-width-down/160?cb=20171015093832&path-prefix=fr",
-    gifattrib: "q"
-  },
-  19: {
-    idey: 19,
-    nom: "Biscuit Monster",
-    image: "https://m.media-amazon.com/images/S/aplus-media/vc/388cedc4-283c-45bb-bcdd-d8efaf79bfa0.png",
-    gifattrib: "s"
-  },
-  20: {
-    idey: 20,
-    nom: "Shiro",
-    image: "https://vignette.wikia.nocookie.net/no-game-no-life/images/0/09/Shiro.png/revision/latest?cb=20170323163115",
-    gifattrib: "p"
-  },
-  21: {
-    idey: 21,
-    nom: "Petit chat de type Aly",
-    image: "https://i.pinimg.com/736x/3d/17/f4/3d17f442926202143cde9b0c2e3b3891.jpg",
-    gifattrib: "o"
-  },
-  22: {
-    idey: 22,
-    nom: "Ludwig",
-    image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a35f1526-57c7-45d3-bdb4-0715bc896984/dd6bvb6-79403e0c-7855-4062-8032-f93b40d4f91e.png/v1/fill/w_796,h_1003,strp/super_mario__coleco_ludwig_von_koopa_2d_by_megatoon1234_dd6bvb6-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEzNCIsInBhdGgiOiJcL2ZcL2EzNWYxNTI2LTU3YzctNDVkMy1iZGI0LTA3MTViYzg5Njk4NFwvZGQ2YnZiNi03OTQwM2UwYy03ODU1LTQwNjItODAzMi1mOTNiNDBkNGY5MWUucG5nIiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ZNKfrkxdreD-Hs0nrB5dlxtBlT6Ua9Gx4pUMPz0qrM4",
-    gifattrib: "w"
-  },
-  23: {
-    idey: 23,
-    nom: "Entei",
-    image: "https://i.pinimg.com/originals/38/bf/0f/38bf0f2efb67a870bae1b9aa8b6f0e72.png",
-    gifattrib: "x"
-  },
-  24: {
-    idey: 24,
-    nom: "Nox",
-    image: "http://image.noelshack.com/fichiers/2014/10/1393976452-p-104-a.jpg",
-    gifattrib: "y"
-  },
-  25: {
-    idey: 25,
-    nom: "Nanachi",
-    image: "https://www.nautiljon.com/images/perso/00/05/nanachi_15450.jpg",
-    gifattrib: "z"
-  },
-}
+var i = 0
 
 //Declaration Variables~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-var channelStockId = "591672121445580811";  //Max, met ici l'id du channel !
+var channelStockId = "734410959761965127";  //Max, met ici l'id du channel !
 
 var dataBank = []; //Contient des tableaux : C'est la base de données quand le bot est actif !
 
+var channelStockIdPersos = "734410862642855941";
+
+var dataBankPersos = [];
 
 //Declaration Fonction~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
 function read () { //lit le stockage discord et le met dans le stockage variable
-
     // met le contenu des messages dans dataBank
         (bot.channels.get(channelStockId).fetchMessages({ limit: 100 }) 
-            .then(messages => 
+            .then(messages =>    
                 messages.forEach(function(valeur , clé) {
                     dataBank.push(valeur.content.split(" * "));
                 })
@@ -347,10 +27,18 @@ function read () { //lit le stockage discord et le met dans le stockage variable
         );
 };
 
-function postReserve (id) { //poste un message dans l'espace de stockage discord ( en théorie, l'id des utilisateurs ayant fait !!OwOLog)
-    bot.channels.get(channelStockId).send(id);
+function readPersos () { //lit le stockage discord et le met dans le stockage variable
+    // met le contenu des messages dans dataBank
+        (bot.channels.get(channelStockIdPersos).fetchMessages({ limit: 100 }) 
+            .then(messages =>    
+                messages.forEach(function(valeur , clé) {
+                    dataBankPersos.push(valeur.content.split(" * "));
+                })
+            )
+            .catch(console.error)
+        );
     
-}
+};
 
 function findUser (id) { //à partir de l'id d'un user, trouve l'indice de sa "fiche" dans le stockage => -1 si pas de fiche
     var userIndice;
@@ -366,510 +54,305 @@ function findUser (id) { //à partir de l'id d'un user, trouve l'indice de sa "f
     }
 }
 
-function add (id, numOwO) { //Ajoute un OwO à un user
-    if (findUser(id) != -1) {
-  bot.channels.get(channelStockId).fetchMessages({ limit: 100 }) //Trouve le message de stockage discord de l'user puis l'edit
-      .then(messages => 
-          messages.forEach(function(message, idMsg) {
-              if (message.content.split(' * ')[0] == id) {
-                  bot.channels.get(channelStockId).fetchMessage(idMsg)
-                      .then(message => 
-                          message.edit(message.content + " * " + numOwO)
-                      )
-                  }
-          })
-      )
-}
+function findUserPersos (id) { //à partir de l'id d'un user, trouve l'indice de sa "fiche" dans le stockage => -1 si pas de fiche
+    var userIndice;
+    dataBankPersos.forEach(function(valeur, clé) {
+        if (id ===  valeur[0]) {
+            userIndice = clé;
+        }
+    })
+    if (userIndice === undefined) {
+        return -1;
+    } else { 
+        return userIndice;
+    }
 }
 
 function gotOwO (id, numOwO) { //Verifie si un user a un OwO ! return true si il l'a, return false sinon
-
-
     var got = false;
     if (findUser(id) != -1 ) {
-
         dataBank[findUser(id)].forEach(function (valeur) {
-
-
             if (valeur === numOwO) {
                 got = true;
-            } 
-            
-        });
-    
+            }            
+        });    
     return got;
-
     }
+}
 
-
+function gotOwOPersos (id, numOwO) { //Verifie si un user a un OwO ! return true si il l'a, return false sinon
+    var got = false;
+    if (findUser(id) != -1 ) {
+        dataBankPersos[findUser(id)].forEach(function (valeur) {
+            if (valeur === numOwO) {
+                got = true;
+            }            
+        });    
+    return got;
+    }
 }
 
 bot.on('ready',() => {
     console.log('Bot Ready')
-    bot.channels.get("597757551286943744").send("?nya")
-    read();
+    read()
+    readPersos()
 })
 
 bot.login(process.env.token);
 
-bot.on('message', message => { //help
-  if(message.content === "!!help"){
-    var embed = new Discord.RichEmbed()
-      .setTitle("Infos sur le bot")
-      .setDescription("Ce bot vous donnes la possibilitée de capturer des MOwOnster, des petites créatures toutes mignones (pour la plupart, tout du moins).")
-      .addField("Prefix :", "!!", true)
-      .addBlankField() 
-      .addField("!!help", "Affiche les commandes du bot.")
-      .addField("!!OwOLog", "Commande à ne faire qu'une fois, pour se connecter au Bot.")
-      .addField("!!cat", "Commande pour attraper un MOwOnster lorsqu'il apparait.")
-      .addField("!!dispo", "Commande pour voir quels Emotes sont disponibles.")
-      .setColor("#68f17d")
-      .setFooter("Amusez vous bien ! - Maxoin | Louloup | Senchi | Baz")
-      message.channel.send(embed);
-  }
+bot.on('message', message => { //Template OST
+    if(message.author.id === "395678267207843872" && message.content === "!!list"){
+    message.channel.send("__**~Garen~**__\n*Émotions :*\n``karma``, ``sad``, ``hmm``\n*Combat :*\n``combat1``, ``combat2``, ``combat3``, ``combat4``, ``berzerk``")
+    }
+    if(message.author.id === "395678267207843872" && message.content === "!!hmm"){
+    message.channel.send("https://www.youtube.com/watch?v=tnrJyvVF7l4")
+    }
 })
-
-bot.on('message', message => { // !!OwOLog ! faisable plusieurs fois !
-
-    if (message.content === "!!OwOLog") {
-        read();
-        if (findUser(message.author.id) === -1) {
-            postReserve(message.author.id); //stockage discord
-            dataBank.push([message.author.id]); //stockage variable
-            message.channel.send("Ok, c'est noté !")
-        } else {
-            message.channel.send("Tu es déjà enregistré ! Tu n'as pas à refaire cette commande.")
-        }
-    }
-
-
-
-});
-
-bot.on('message', message => { //Log
-    if (message.content === "!!LogO") {
-        read();
-        console.log(mowo[13].nom)
-        console.log("Wesh les relous, ce soir on fout le zbeul")
-    }})
-
-bot.on('message', message => { //Log
-    if (message.content === "!!LogG") {
-        read();
-        console.log(gifs.a.nom)
-        console.log("Wesh les relous, ce soir on fout le zbeul")
-    }})
-
-bot.on('message', message => {// same ^^^^ fait "check " + "quelque chose" pour vérifier si tu l'as dans ton message dans le stockage discord. (le bot return un boolean)
-    if(message.content === "!!check") {
-        if(gotOwO(message.author.id, message.content.split(' ')[1] )) {
-            message.reply("true");
-        }else {
-            message.reply("false");
-        }
-    }
-});
-
-bot.on('message', message => { //Appartion MOwOnster
- read();
- if(message.content.includes("!!")){
-  
- }else{
-   if (findUser(message.author.id) === -1){
-    
-   }else{
-     var spawn = Math.floor(Math.random() * Math.floor(100))
-     console.log("wala")
-     if(spawn <= 7){
-       kispawn = Math.floor(Math.random() * Math.floor(26))
-       console.log(kispawn)
-       console.log(mowo[kispawn].nom)
-       var embedp = new Discord.RichEmbed()
-         .setTitle("Un MOwOnster est apparut !")
-         .addField(`C'est un ${mowo[kispawn].nom} !`, 'Attrape le avec un "!!cat" !')
-         .setImage(mowo[kispawn].image)
-         .setColor("#351cc0")
-         bot.channels.get("617739580388540419").send(embedp)
-         catnum = kispawn
-         salon = message.channel.id
-     }
-   }
-}})
-
-bot.on('message', message => { //Capture
- if(message.content === "!!cat"){
-  if (findUser(message.author.id) === -1){
-    message.channel.send("Tu n'as pas encore de compte OwO\nTu peux réglé ça avec un ``!!OwOLog``")
-  }else{
-    yuser = message.author.id
-    if(catnum === ""){
-      console.log("'^'")
-    }else{
-      add(yuser, mowo[catnum].gifattrib)
-      message.channel.send(`Bien joué ! Tu viens de capturer un ${mowo[catnum].nom}, COwOmbatant !`)
-      catnum = "" 
-    }
-  }
-}})
 
 bot.on('message', message => {
-  if(message.content === "?nya"){
-      console.log("toutéparé")
-    setTimeout(function(){
-      bot.channels.get("597757551286943744").send("?nya")
-      console.log("pour être sur x3")
-    }, 60000)
-  }
+    if(message.content.includes("!!atk ")){ 
+        var attaque = message.content.split(" ")[1]
+        var lanceur = message.content.split(" ")[2]
+        var victime = message.content.split(" ")[3]
+        var precp = 100
+        var esqui = 100
+        for(var i = 0; i < dataBank.length; i++){
+          if(dataBank[i][0] === attaque){
+            var puis = dataBank[i][1]
+            var prec = dataBank[i][2]
+          }
+        }
+        for(var ip = 0; ip < dataBankPersos.length; ip++){
+          if(dataBankPersos[ip][0] === lanceur){
+            var nom1 = dataBankPersos[ip][0]
+            var niveau1 = dataBankPersos[ip][1]
+            var pv1 = dataBankPersos[ip][2]
+            var attak1 = dataBankPersos[ip][3]
+            var def1 = dataBankPersos[ip][4]
+            var vit1 = dataBankPersos[ip][5]
+          }
+        }
+        for(var ipb = 0; ipb < dataBankPersos.length; ipb++){
+          if(dataBankPersos[ipb][0] === victime){
+            var nom2 = dataBankPersos[ipb][0]
+            var niveau2 = dataBankPersos[ipb][1]
+            var pv2 = dataBankPersos[ipb][2]
+            var attak2 = dataBankPersos[ipb][3]
+            var def2 = dataBankPersos[ipb][4]
+            var vit2 = dataBankPersos[ipb][5]
+          }
+        }
+        if(message.content.includes("atk+1") || message.content.includes("Atk+1")){
+            attak1 *= 1.5
+        }
+        if(message.content.includes("atk+2") || message.content.includes("Atk+2")){
+            attak1 *= 2
+        }
+        if(message.content.includes("atk+3") || message.content.includes("Atk+3")){
+            attak1 *= 2.5
+        }
+        if(message.content.includes("atk+4") || message.content.includes("Atk+4")){
+            attak1 *= 3
+        }
+        if(message.content.includes("atk+5") || message.content.includes("Atk+5")){
+            attak1 *= 3.5
+        }
+        if(message.content.includes("atk+6") || message.content.includes("Atk+6")){
+            attak1 *= 4
+        }
+        if(message.content.includes("def+1") || message.content.includes("Def+1")){
+            def2 *= 1.5
+        }
+        if(message.content.includes("def+2") || message.content.includes("Def+2")){
+            def2 *= 2
+        }
+        if(message.content.includes("def+3") || message.content.includes("Def+3")){
+            def2 *= 2.5
+        }
+        if(message.content.includes("def+4") || message.content.includes("Def+4")){
+            def2 *= 3
+        }
+        if(message.content.includes("def+5") || message.content.includes("Def+5")){
+            def2 *= 3.5
+        }
+        if(message.content.includes("def+6") || message.content.includes("Def+6")){
+            def2 *= 4
+        }
+        if(message.content.includes("atkS+1") || message.content.includes("AtkS+1") || message.content.includes("atks+1") || message.content.includes("Atks+1")){
+            attakS1 *= 1.5
+        }
+        if(message.content.includes("atkS+2") || message.content.includes("AtkS+2") || message.content.includes("atks+2") || message.content.includes("Atks+2")){
+            attakS1 *= 2
+        }
+        if(message.content.includes("atkS+3") || message.content.includes("AtkS+3") || message.content.includes("atks+3") || message.content.includes("Atks+3")){
+            attakS1 *= 2.5
+        }
+        if(message.content.includes("atkS+4") || message.content.includes("AtkS+4") || message.content.includes("atks+4") || message.content.includes("Atks+4")){
+            attakS1 *= 3
+        }
+        if(message.content.includes("atkS+5") || message.content.includes("AtkS+5") || message.content.includes("atks+5") || message.content.includes("Atks+5")){
+            attakS1 *= 3.5
+        }
+        if(message.content.includes("atkS+6") || message.content.includes("AtkS+6") || message.content.includes("atks+6") || message.content.includes("Atks+6")){
+            attakS1 *= 4
+        }
+        if(message.content.includes("defS+1") || message.content.includes("DefS+1") || message.content.includes("defs+1") || message.content.includes("Defs+1")){
+            defS2 *= 1.5
+        }
+        if(message.content.includes("defS+2") || message.content.includes("DefS+2") || message.content.includes("defs+2") || message.content.includes("Defs+2")){
+            defS2 *= 2
+        }
+        if(message.content.includes("defS+3") || message.content.includes("DefS+3") || message.content.includes("defs+3") || message.content.includes("Defs+3")){
+            defS2 *= 2.5
+        }
+        if(message.content.includes("defS+4") || message.content.includes("DefS+4") || message.content.includes("defs+4") || message.content.includes("Defs+4")){
+            defS2 *= 3
+        }
+        if(message.content.includes("defS+5") || message.content.includes("DefS+5") || message.content.includes("defs+5") || message.content.includes("Defs+5")){
+            defS2 *= 3.5
+        }
+        if(message.content.includes("defS+6") || message.content.includes("DefS+6") || message.content.includes("defs+6") || message.content.includes("Defs+6")){
+            defS2 *= 4
+        }
+        
+        if(message.content.includes("atk-1") || message.content.includes("Atk-1")){
+            attak1 /= 1.5
+        }
+        if(message.content.includes("atk-2") || message.content.includes("Atk-2")){
+            attak1 /= 2
+        }
+        if(message.content.includes("atk-3") || message.content.includes("Atk-3")){
+            attak1 /= 2.5
+            console.log(attak1)
+        }
+        if(message.content.includes("atk-4") || message.content.includes("Atk-4")){
+            attak1 /= 3
+        }
+        if(message.content.includes("atk-5") || message.content.includes("Atk-5")){
+            attak1 /= 3.5
+        }
+        if(message.content.includes("atk-6") || message.content.includes("Atk-6")){
+            attak1 /= 4
+        }
+        if(message.content.includes("def-1") || message.content.includes("Def-1")){
+            def2 /= 1.5
+        }
+        if(message.content.includes("def-2") || message.content.includes("Def-2")){
+            def2 /= 2
+        }
+        if(message.content.includes("def-3") || message.content.includes("Def-3")){
+            def2 /= 2.5
+        }
+        if(message.content.includes("def-4") || message.content.includes("Def-4")){
+            def2 /= 3
+        }
+        if(message.content.includes("def-5") || message.content.includes("Def-5")){
+            def2 /= 3.5
+        }
+        if(message.content.includes("def-6") || message.content.includes("Def-6")){
+            def2 /= 4
+        }
+        var crit = Math.floor(Math.random() * Math.floor(100))
+        if(message.content.includes("Crit+1") || message.content.includes("crit+1")){
+            crit += 10
+        }
+        if(message.content.includes("Crit+2") || message.content.includes("crit+2")){
+            crit += 15
+        }
+        if(message.content.includes("Crit+3") || message.content.includes("crit+3")){
+            crit += 20
+        }
+        if(message.content.includes("Crit+4") || message.content.includes("crit+4")){
+            crit += 25
+        }
+        if(message.content.includes("Crit+5") || message.content.includes("crit+5")){
+            crit += 30
+        }
+        if(message.content.includes("Esq+1") || message.content.includes("esq+1")){
+            esqui = 133
+        }
+        if(message.content.includes("Esq+2") || message.content.includes("esq+2")){
+            esqui = 167
+        }
+        if(message.content.includes("Esq+3") || message.content.includes("esq+3")){
+            esqui = 200
+        }
+        if(message.content.includes("Esq-1") || message.content.includes("esq-1")){
+            esqui = 75
+        }
+        if(message.content.includes("Esq-2") || message.content.includes("esq-2")){
+            esqui = 60
+        }
+        if(message.content.includes("Esq-3") || message.content.includes("esq-3")){
+            esqui = 50
+        }
+        if(message.content.includes("Pre+1") || message.content.includes("pre+1")){
+            precp = 133
+        }
+        if(message.content.includes("Pre+2") || message.content.includes("pre+2")){
+            precp = 167
+        }
+        if(message.content.includes("Pre+3") || message.content.includes("pre+3")){
+            precp = 200
+        }
+        if(message.content.includes("Pre-1") || message.content.includes("pre-1")){
+            precp = 75
+        }
+        if(message.content.includes("Pre-2") || message.content.includes("pre-2")){
+            precp = 60
+        }
+        if(message.content.includes("Pre-3") || message.content.includes("pre-3")){
+            precp = 50
+        }
+        var degz = Math.round((((((niveau1*0.4)+2)*attak1*puis)/(def2*50)+2)) * 1) / 1
+
+        console.log("Type : " + type + " & " + typdegz + " Crit = " + crit)
+        var hit = (precp / esqui) * prec
+        var probahit = Math.floor(Math.random() * Math.floor(100))
+        console.log(hit + "/" + probahit)
+        if(crit >= 80 && (probahit <= hit || probahit === hit)){
+            degz *= 2
+            message.channel.send("**Coup Critique !**")
+        }   
+        var testvit = vit2 * 2
+        if(probahit <= hit || probahit === hit){
+            message.channel.send("L'attaque fait **" + degz + "** points de dégàts !")
+            if(testvit <= vit1 || testvit === vit2){
+            message.channel.send("La vitesse de " + nom1 + " lui fait assainer une nouvelle attaque ! **" + degz2 + "** points de dégàts supplémentaires pour " + nom2 + " !")
+            }
+        }
+        if(probahit >= hit){
+            message.channel.send(nom1 + " rate son attaque !")
+        }
+    }
 })
 
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "a") && message.content.includes('>' + gifs.a.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.a.annonce)
-      .setImage(gifs.a.gif)
-      .setColor("#d28f49")
-    message.channel.send(embed);
-}})
+bot.on('message', message => {
+    if(message.content.includes("!!vs ")){
+        var vs1 = message.content.split(" ")[1]
+        var vs2 = message.content.split(" ")[2]
+        for(var ipv1 = 0; ipv1 < dataBankPersos.length; ipv1++){
+          if(dataBankPersos[ipv1][0] === vs1){
+            var nom1 = dataBankPersos[ipv1][0]
+            var pv1 = dataBankPersos[ipv1][2]
+          }
+        }
+        for(var ipv2 = 0; ipv2 < dataBankPersos.length; ipv2++){
+          if(dataBankPersos[ipv2][0] === vs2){
+            var nom2 = dataBankPersos[ipv2][0]
+            var pv2 = dataBankPersos[ipv2][2]
+          }
+        }
+    }
+})
 
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "b") && message.content.includes('>' + gifs.b.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.b.annonce)
-      .setImage(gifs.b.gif)
-      .setColor("#dc2d96")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "c") && message.content.includes('>' + gifs.c.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.c.annonce)
-      .setImage(gifs.c.gif)
-      .setColor("#e3b072")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "d") && message.content.includes('>' + gifs.d.nom)){
-   console.log("TARACE LA HACHE")
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.d.annonce)
-      .setImage(gifs.d.gif)
-      .setColor("#72d7e3")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "e") && message.content.includes('>' + gifs.e.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.e.annonce)
-      .setImage(gifs.e.gif)
-      .setColor("#8bf3f0")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "f") && message.content.includes('>' + gifs.f.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.f.annonce)
-      .setImage(gifs.f.gif)
-      .setColor("#8a00ef")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "g") && message.content.includes('>' + gifs.g.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.g.annonce)
-      .setImage(gifs.g.gif)
-      .setColor("#ff853c")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "h") && message.content.includes('>' + gifs.h.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.h.annonce)
-      .setImage(gifs.h.gif)
-      .setColor("#002a5e")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "i") && message.content.includes('>' + gifs.i.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.i.annonce)
-      .setImage(gifs.i.gif)
-      .setColor("#e2ba40")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "j") && message.content.includes('>' + gifs.j.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.j.annonce)
-      .setImage(gifs.j.gif)
-      .setColor("#7caeec")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "k") && message.content.includes('>' + gifs.k.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.k.annonce)
-      .setImage(gifs.k.gif)
-      .setColor("#ff0000")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "l") && message.content.includes('>' + gifs.l.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.l.annonce)
-      .setImage(gifs.l.gif)
-      .setColor("#ffd3d3")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "m") && message.content.includes('>' + gifs.m.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.m.annonce)
-      .setImage(gifs.m.gif)
-      .setColor("#5b28a6")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "n") && message.content.includes('>' + gifs.n.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.n.annonce)
-      .setImage(gifs.n.gif)
-      .setColor("#ecea00")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "o") && message.content.includes('>' + gifs.o.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.o.annonce)
-      .setImage(gifs.o.gif)
-      .setColor("#ffffff")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "p") && message.content.includes('>' + gifs.p.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.p.annonce)
-      .setImage(gifs.p.gif)
-      .setColor("#edb7ff")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "q") && message.content.includes('>' + gifs.q.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.q.annonce)
-      .setImage(gifs.q.gif)
-      .setColor("#41fc44")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "r") && message.content.includes('>' + gifs.r.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.r.annonce)
-      .setImage(gifs.r.gif)
-      .setColor("#ff881c")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "s") && message.content.includes('>' + gifs.s.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.s.annonce)
-      .setImage(gifs.s.gif)
-      .setColor("#3b82db")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "t") && message.content.includes('>' + gifs.t.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.t.annonce)
-      .setImage(gifs.t.gif)
-      .setColor("#595959")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "u") && message.content.includes('>' + gifs.u.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.u.annonce)
-      .setImage(gifs.u.gif)
-      .setColor("#000000")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "v") && message.content.includes('>' + gifs.v.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.v.annonce)
-      .setImage(gifs.v.gif)
-      .setColor("#b426c1")
-    message.channel.send(embed);
-}})
-
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "w") && message.content.includes('>' + gifs.w.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.w.annonce)
-      .setImage(gifs.w.gif)
-      .setColor("#392bfe")
-    message.channel.send(embed);
-}})
-
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "x") && message.content.includes('>' + gifs.x.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.x.annonce)
-      .setImage(gifs.x.gif)
-      .setColor("#ff6900")
-    message.channel.send(embed);
-}})
-
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "y") && message.content.includes('>' + gifs.y.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.y.annonce)
-      .setImage(gifs.y.gif)
-      .setColor("#ff6900")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Gifs
-  yuser = message.author.id
-  if(gotOwO(yuser, "z") && message.content.includes('>' + gifs.z.nom)){
-    var embed = new Discord.RichEmbed()
-      .setTitle(gifs.z.annonce)
-      .setImage(gifs.z.gif)
-      .setColor("#ff6900")
-    message.channel.send(embed);
-}})
-
-bot.on('message', message => { //Dispo Emotes
- if(message.content === "!!dispo"){
-  if(findUser(message.author.id) === -1){
-    message.channel.send("Tu n'as pas encore de compte OwO\nTu peux réglé ça avec un ``!!OwOLog``")
-  }else{
-   message.channel.send("Tes commandes te sont envoyés en MP, cher ami !")
-  message.author.createDM().then(channel => {
-    channel.send('Voici tes différentes commandes :\n//////////////////////')
-   if(gotOwO(yuser, "a")){
-    channel.send("> " + gifs.a.nom)
-   }
-   if(gotOwO(yuser, "b")){
-    channel.send("> " + gifs.b.nom)
-   }
-   if(gotOwO(yuser, "c")){
-    channel.send("> " + gifs.c.nom)
-   }
-   if(gotOwO(yuser, "d")){
-    channel.send("> " + gifs.d.nom)
-   }
-   if(gotOwO(yuser, "e")){
-    channel.send("> " + gifs.e.nom)
-   }
-   if(gotOwO(yuser, "f")){
-    channel.send("> " + gifs.f.nom)
-   }
-   if(gotOwO(yuser, "g")){
-    channel.send("> " + gifs.g.nom)
-   }
-   if(gotOwO(yuser, "h")){
-    channel.send("> " + gifs.h.nom)
-   }
-   if(gotOwO(yuser, "i")){
-    channel.send("> " + gifs.i.nom)
-   }
-   if(gotOwO(yuser, "j")){
-    channel.send("> " + gifs.j.nom)
-   }
-   if(gotOwO(yuser, "k")){
-    channel.send("> " + gifs.k.nom)
-   }
-   if(gotOwO(yuser, "l")){
-    channel.send("> " + gifs.l.nom)
-   }
-   if(gotOwO(yuser, "m")){
-    channel.send("> " + gifs.m.nom)
-   }
-   if(gotOwO(yuser, "n")){
-    channel.send("> " + gifs.n.nom)
-   }
-   if(gotOwO(yuser, "o")){
-    channel.send("> " + gifs.o.nom)
-   }
-   if(gotOwO(yuser, "p")){
-    channel.send("> " + gifs.p.nom)
-   }
-   if(gotOwO(yuser, "q")){
-    channel.send("> " + gifs.q.nom)
-   }
-   if(gotOwO(yuser, "r")){
-    channel.send("> " + gifs.r.nom)
-   }
-   if(gotOwO(yuser, "s")){
-    channel.send("> " + gifs.s.nom)
-   }
-   if(gotOwO(yuser, "t")){
-    channel.send("> " + gifs.t.nom)
-   }
-   if(gotOwO(yuser, "u")){
-    channel.send("> " + gifs.u.nom)
-   }
-   if(gotOwO(yuser, "v")){
-    channel.send("> " + gifs.v.nom)
-   }
-   if(gotOwO(yuser, "w")){
-    channel.send("> " + gifs.w.nom)
-   }
-   if(gotOwO(yuser, "x")){
-    channel.send("> " + gifs.x.nom)
-   }
-   if(gotOwO(yuser, "y")){
-    channel.send("> " + gifs.y.nom)
-   }
-   if(gotOwO(yuser, "z")){
-    channel.send("> " + gifs.z.nom)
-   }
-  })}}})
+bot.on('message', message => {
+    if(message.content === "!!read"){
+        dataBank = []
+        dataBankPersos = []
+        read()
+        readPersos()
+        console.log(dataBank)
+        console.log(dataBankPersos)
+    }
+})
